@@ -1,0 +1,1543 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-15 11:00:49.895114 UTC
+
+interface calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:BasicDerivatives 8001
+  interface hash: 96701940ba8565ce53f4a3be28fe8e38
+  ABI hash: 4baa3e69c848b3c7ab778d32d2a5805b
+  export-list hash: 2120a65daf2f554040b82f162ee6cdb9
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  BasicDerivatives.acos'
+  BasicDerivatives.acosh'
+  BasicDerivatives.acot
+  BasicDerivatives.acoth
+  BasicDerivatives.acsc
+  BasicDerivatives.acsch
+  BasicDerivatives.asec
+  BasicDerivatives.asech
+  BasicDerivatives.asin'
+  BasicDerivatives.asinh'
+  BasicDerivatives.atan'
+  BasicDerivatives.atanh'
+  BasicDerivatives.cos'
+  BasicDerivatives.cosh'
+  BasicDerivatives.cot
+  BasicDerivatives.coth
+  BasicDerivatives.csc
+  BasicDerivatives.csch
+  BasicDerivatives.dacos
+  BasicDerivatives.dacosh
+  BasicDerivatives.dacot
+  BasicDerivatives.dacoth
+  BasicDerivatives.dacsc
+  BasicDerivatives.dacsch
+  BasicDerivatives.dasec
+  BasicDerivatives.dasech
+  BasicDerivatives.dasin
+  BasicDerivatives.dasinh
+  BasicDerivatives.datan
+  BasicDerivatives.datanh
+  BasicDerivatives.dc
+  BasicDerivatives.dcos
+  BasicDerivatives.dcosh
+  BasicDerivatives.dcot
+  BasicDerivatives.dcoth
+  BasicDerivatives.dcsc
+  BasicDerivatives.dcsch
+  BasicDerivatives.dexp
+  BasicDerivatives.dlog
+  BasicDerivatives.dlog10
+  BasicDerivatives.dsec
+  BasicDerivatives.dsech
+  BasicDerivatives.dsin
+  BasicDerivatives.dsinh
+  BasicDerivatives.dtan
+  BasicDerivatives.dtanh
+  BasicDerivatives.dxToX
+  BasicDerivatives.exp'
+  BasicDerivatives.log'
+  BasicDerivatives.log10
+  BasicDerivatives.sec
+  BasicDerivatives.sech
+  BasicDerivatives.sin'
+  BasicDerivatives.sinh'
+  BasicDerivatives.takeMaybePM
+  BasicDerivatives.takeMaybeTD
+  BasicDerivatives.tan'
+  BasicDerivatives.tanh'
+  BasicDerivatives.xToX
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Float 469226b1bc53433e95d0167dec5d0312
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+1fae5b0bfef722b835ac918b15ba05f2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   BasicDerivatives.$trModule2
+                   BasicDerivatives.$trModule1) -}
+8d46c54d8e9ba13cc25782c4fea25b4a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "BasicDerivatives"#) -}
+68e8a270ab4d2f6da2ca334a3e6ddef8
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ"#) -}
+20d1ca7af7de4786dc6f0fc2270e8e3c
+  $wacos' :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim.acosDouble# ww of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim.acosDouble# ww of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) } }
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim.acosDouble# ww of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 }) }) -}
+2c81c352b329802d1313965eaeb53089
+  $wacosh' :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          (GHC.Prim.-## ww 1.0##)
+                                          (GHC.Prim.+## ww 1.0##) of wild4 { DEFAULT ->
+                                   case GHC.Prim.logDouble#
+                                          (GHC.Prim.+##
+                                             ww
+                                             (GHC.Prim.*##
+                                                (GHC.Prim.+## ww 1.0##)
+                                                (GHC.Prim.sqrtDouble# wild4))) of wild5 { DEFAULT ->
+                                   GHC.Types.D# wild5 } }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          (GHC.Prim.-## ww 1.0##)
+                                          (GHC.Prim.+## ww 1.0##) of wild4 { DEFAULT ->
+                                   case GHC.Prim.logDouble#
+                                          (GHC.Prim.+##
+                                             ww
+                                             (GHC.Prim.*##
+                                                (GHC.Prim.+## ww 1.0##)
+                                                (GHC.Prim.sqrtDouble# wild4))) of wild5 { DEFAULT ->
+                                   GHC.Types.D# wild5 } }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+c204129bddab96f02a368f7b03cde35b
+  $wacoth :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./## 1.0## ww of wild4 { DEFAULT ->
+                                   case GHC.Prim./##
+                                          (GHC.Prim.+## 1.0## wild4)
+                                          (GHC.Prim.-## 1.0## wild4) of wild5 { DEFAULT ->
+                                   case GHC.Prim.logDouble# wild5 of wild6 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.*## 0.5## wild6) } } }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./## 1.0## ww of wild4 { DEFAULT ->
+                                   case GHC.Prim./##
+                                          (GHC.Prim.+## 1.0## wild4)
+                                          (GHC.Prim.-## 1.0## wild4) of wild5 { DEFAULT ->
+                                   case GHC.Prim.logDouble# wild5 of wild6 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.*## 0.5## wild6) } } }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+df91075893b2765c3dc284a7067ca6e6
+  $wacsc :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./## 1.0## ww of wild4 { DEFAULT ->
+                                   case GHC.Prim.asinDouble# wild4 of wild5 { DEFAULT ->
+                                   GHC.Types.D# wild5 } }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./## 1.0## ww of wild4 { DEFAULT ->
+                                   case GHC.Prim.asinDouble# wild4 of wild5 { DEFAULT ->
+                                   GHC.Types.D# wild5 } }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+3024d0b4efec0524919804108f3826ad
+  $wasec :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./## 1.0## ww of wild4 { DEFAULT ->
+                                   case GHC.Prim.acosDouble# wild4 of wild5 { DEFAULT ->
+                                   GHC.Types.D# wild5 } }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./## 1.0## ww of wild4 { DEFAULT ->
+                                   case GHC.Prim.acosDouble# wild4 of wild5 { DEFAULT ->
+                                   GHC.Types.D# wild5 } }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+412cf9915fbd870cb9f3f8f58b3c49d4
+  $wasech :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## (GHC.Prim.negateDouble# ww) 1.0##) of wild1 {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./## 1.0## ww of wild3 { DEFAULT ->
+                                   case GHC.Prim./##
+                                          (GHC.Prim.-## wild3 1.0##)
+                                          (GHC.Prim.+## wild3 1.0##) of wild4 { DEFAULT ->
+                                   case GHC.Prim.logDouble#
+                                          (GHC.Prim.+##
+                                             wild3
+                                             (GHC.Prim.*##
+                                                (GHC.Prim.+## wild3 1.0##)
+                                                (GHC.Prim.sqrtDouble# wild4))) of wild5 { DEFAULT ->
+                                   GHC.Types.D# wild5 } } }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## ww 1.0##) of wild1 {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./## 1.0## ww of wild3 { DEFAULT ->
+                                   case GHC.Prim./##
+                                          (GHC.Prim.-## wild3 1.0##)
+                                          (GHC.Prim.+## wild3 1.0##) of wild4 { DEFAULT ->
+                                   case GHC.Prim.logDouble#
+                                          (GHC.Prim.+##
+                                             wild3
+                                             (GHC.Prim.*##
+                                                (GHC.Prim.+## wild3 1.0##)
+                                                (GHC.Prim.sqrtDouble# wild4))) of wild5 { DEFAULT ->
+                                   GHC.Types.D# wild5 } } }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+916bface74a4152e41a31a26747ae73c
+  $wasin' :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim.asinDouble# ww of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim.asinDouble# ww of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) } }
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim.asinDouble# ww of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 }) }) -}
+0b0a4c67d319128ab6860f40bfd90506
+  $watanh' :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          (GHC.Prim.+## 1.0## ww)
+                                          (GHC.Prim.-## 1.0## ww) of wild4 { DEFAULT ->
+                                   case GHC.Prim.logDouble# wild4 of wild5 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.*## 0.5## wild5) } }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          (GHC.Prim.+## 1.0## ww)
+                                          (GHC.Prim.-## 1.0## ww) of wild4 { DEFAULT ->
+                                   case GHC.Prim.logDouble# wild4 of wild5 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.*## 0.5## wild5) } }) } }
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                (GHC.Prim.+## 1.0## ww)
+                                (GHC.Prim.-## 1.0## ww) of wild2 { DEFAULT ->
+                         case GHC.Prim.logDouble# wild2 of wild3 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.*## 0.5## wild3) } }) }) -}
+9dbd6ddacfefcba17e125693d19d65cb
+  $wdacos :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.sqrtDouble#
+                                             (GHC.Prim.-##
+                                                1.0##
+                                                (GHC.Prim.*## ww ww))) of wild4 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.negateDouble# wild4) }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.sqrtDouble#
+                                             (GHC.Prim.-##
+                                                1.0##
+                                                (GHC.Prim.*## ww ww))) of wild4 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.negateDouble# wild4) }) } }
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sqrtDouble#
+                                   (GHC.Prim.-## 1.0## (GHC.Prim.*## ww ww))) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.negateDouble# wild2) }) }) -}
+23868db01154a538cfb5ddbd9722358f
+  $wdacosh :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.sqrtDouble#
+                                             (GHC.Prim.-##
+                                                (GHC.Prim.*## ww ww)
+                                                1.0##)) of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.sqrtDouble#
+                                             (GHC.Prim.-##
+                                                (GHC.Prim.*## ww ww)
+                                                1.0##)) of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+7c0b5ec9071f77275df13b6f23ed52e3
+  $wdacoth :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.-##
+                                             (GHC.Prim.*## ww ww)
+                                             1.0##) of wild4 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.negateDouble# wild4) }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.-##
+                                             (GHC.Prim.*## ww ww)
+                                             1.0##) of wild4 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.negateDouble# wild4) }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+e519c5934233aafa4f36f7b07577a1f1
+  $wdacsc :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.*##
+                                             ww
+                                             (GHC.Prim.sqrtDouble#
+                                                (GHC.Prim.-##
+                                                   (GHC.Prim.*## ww ww)
+                                                   1.0##))) of wild4 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.negateDouble# wild4) }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.*##
+                                             ww
+                                             (GHC.Prim.sqrtDouble#
+                                                (GHC.Prim.-##
+                                                   (GHC.Prim.*## ww ww)
+                                                   1.0##))) of wild4 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.negateDouble# wild4) }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+c429afd148928105620ac12a58d63a76
+  $wdasec :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.*##
+                                             ww
+                                             (GHC.Prim.sqrtDouble#
+                                                (GHC.Prim.-##
+                                                   (GHC.Prim.*## ww ww)
+                                                   1.0##))) of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.*##
+                                             ww
+                                             (GHC.Prim.sqrtDouble#
+                                                (GHC.Prim.-##
+                                                   (GHC.Prim.*## ww ww)
+                                                   1.0##))) of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+92fd6f33cb8ce346bea131fa0125a9ea
+  $wdasech :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## (GHC.Prim.negateDouble# ww) 1.0##) of wild1 {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.*##
+                                             ww
+                                             (GHC.Prim.sqrtDouble#
+                                                (GHC.Prim.-##
+                                                   1.0##
+                                                   (GHC.Prim.*## ww ww)))) of wild3 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.negateDouble# wild3) }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## ww 1.0##) of wild1 {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.*##
+                                             ww
+                                             (GHC.Prim.sqrtDouble#
+                                                (GHC.Prim.-##
+                                                   1.0##
+                                                   (GHC.Prim.*## ww ww)))) of wild3 { DEFAULT ->
+                                   GHC.Types.D# (GHC.Prim.negateDouble# wild3) }) } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+b28504e9a9c50db398a2d8756e855590
+  $wdasin :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.sqrtDouble#
+                                             (GHC.Prim.-##
+                                                1.0##
+                                                (GHC.Prim.*## ww ww))) of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.sqrtDouble#
+                                             (GHC.Prim.-##
+                                                1.0##
+                                                (GHC.Prim.*## ww ww))) of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) } }
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sqrtDouble#
+                                   (GHC.Prim.-## 1.0## (GHC.Prim.*## ww ww))) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 }) }) -}
+b1aae5be88dceb1ba78c3d8fcea3914e
+  $wdatanh :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>## ww 0.0##) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## (GHC.Prim.negateDouble# ww) 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.-##
+                                             1.0##
+                                             (GHC.Prim.*## ww ww)) of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) }
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<## ww 1.0##) of wild {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                             GHC.Types.True
+                             -> GHC.Base.Just
+                                  @ GHC.Types.Double
+                                  (case GHC.Prim./##
+                                          1.0##
+                                          (GHC.Prim.-##
+                                             1.0##
+                                             (GHC.Prim.*## ww ww)) of wild4 { DEFAULT ->
+                                   GHC.Types.D# wild4 }) } }
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.-## 1.0## (GHC.Prim.*## ww ww)) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 }) }) -}
+262023ca641ed2dc78720e4722914c46
+  $wdcot :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinDouble# ww) 0.0##) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sinDouble# ww) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.negateDouble# (GHC.Prim.*## wild2 wild2)) })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+ad4bcbac62c8cb17bc70f0b25ab12431
+  $wdcoth :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinhDouble# ww) 0.0##) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sinhDouble# ww) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.negateDouble# (GHC.Prim.*## wild2 wild2)) })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+04b025fa903cadcd43ca49c56adb3776
+  $wdcsch :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinhDouble# ww) 0.0##) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sinhDouble# ww) of wild2 { DEFAULT ->
+                         case GHC.Prim./##
+                                (GHC.Prim.coshDouble# ww)
+                                (GHC.Prim.sinhDouble# ww) of wild1 { DEFAULT ->
+                         GHC.Types.D#
+                           (GHC.Prim.negateDouble# (GHC.Prim.*## wild2 wild1)) } })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+3d57f550a1486dc72fd88b5d6fdd2471
+  $wdsech :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.coshDouble# ww) 0.0##) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.coshDouble# ww) of wild2 { DEFAULT ->
+                         GHC.Types.D#
+                           (GHC.Prim.negateDouble#
+                              (GHC.Prim.*## wild2 (GHC.Prim.tanhDouble# ww))) })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+708e274342a02741dc58d7aa61690df0
+  $wdtan :: GHC.Prim.Double# -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.cosDouble# ww) 0.0##) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.cosDouble# ww) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.*## wild2 wild2) })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double }) -}
+00b93e22904b8d3bde9c6dfd8dbbd3de
+  acos' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wacos' ww1 }) -}
+5d1ed031bbe9f52453f368bdf24f2f25
+  acosh' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wacosh' ww1 }) -}
+73995bcef9814226a4b14aafdfdde778
+  acot :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## x1 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./## 1.0## x1 of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.atanDouble# wild2) })
+                   GHC.Types.True -> BasicDerivatives.acot1 } }) -}
+503c6a47349c62d1f23de73bb0e78bcb
+  acot1 :: GHC.Base.Maybe GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ GHC.Types.Double
+                   BasicDerivatives.acot2) -}
+0ea3d3ba8e4013715298250a151e0fed
+  acot2 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.D# 1.5707963267948966##) -}
+586159323f4275da72c159639261728f
+  acoth :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wacoth ww1 }) -}
+130ef86f1a3f44856f768b7e47011e25
+  acsc :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wacsc ww1 }) -}
+c182714a2ae3c92d22c00f7124602ab5
+  acsch :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## x1 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./## 1.0## x1 of wild2 { DEFAULT ->
+                         case GHC.Prim.logDouble#
+                                (GHC.Prim.+##
+                                   wild2
+                                   (GHC.Prim.sqrtDouble#
+                                      (GHC.Prim.+##
+                                         1.0##
+                                         (GHC.Prim.*## wild2 wild2)))) of wild3 { DEFAULT ->
+                         GHC.Types.D# wild3 } })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+d57c500e842084827f03ee2b05fb40b1
+  asec :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wasec ww1 }) -}
+b4f9ad64421e95625d9c3a971ee9b0fe
+  asech :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wasech ww1 }) -}
+4ae20191f0e2b8bc5921f66469d575cd
+  asin' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wasin' ww1 }) -}
+6606f02ccece848b0003a35ac8e87e04
+  asinh' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (GHC.Float.$fFloatingDouble_$casinh x)) -}
+2970807e67e8c80979bbc283b9563b4b
+  atan' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.atanDouble x)) -}
+ea21134a608e277e969604e2e1c2cf2a
+  atanh' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$watanh' ww1 }) -}
+8b45825972d5794edd6715615b40eb7f
+  cos' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.cosDouble x)) -}
+731c7cd50859063060e169714a1c4603
+  cosh' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.coshDouble x)) -}
+6c0f450108f6fdcd5c68b26a3846baeb
+  cot :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                (GHC.Prim.cosDouble# x1)
+                                (GHC.Prim.sinDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+513cbbece66990871bfaa8eb1d6f5fe8
+  coth :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinhDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                (GHC.Prim.coshDouble# x1)
+                                (GHC.Prim.sinhDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+eb8b41f643026ba89b3c9d283af164d4
+  csc :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sinDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+1b402eb1925e005e4d52acac1494da30
+  csch :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinhDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sinhDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+602eb217582631eab1ac2a51b6bb78a0
+  dacos :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdacos ww1 }) -}
+7ece311744d558bc5e8bb2bc440445a0
+  dacosh :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdacosh ww1 }) -}
+938b294bd975516958780fc0be7d79ed
+  dacot :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case x of wild { GHC.Types.D# x1 ->
+                    case GHC.Prim./##
+                           1.0##
+                           (GHC.Prim.+## 1.0## (GHC.Prim.*## x1 x1)) of wild2 { DEFAULT ->
+                    GHC.Types.D# (GHC.Prim.negateDouble# wild2) } })) -}
+5772b89edf881aed01e9611d71ed5d83
+  dacoth :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdacoth ww1 }) -}
+7b548529accd98afea676cf5412eca71
+  dacsc :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdacsc ww1 }) -}
+a32a2e89006da477d661a7dce21b0bbc
+  dacsch :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## x1 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.*##
+                                   x1
+                                   (GHC.Prim.sqrtDouble#
+                                      (GHC.Prim.+##
+                                         1.0##
+                                         (GHC.Prim.*## x1 x1)))) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.negateDouble# wild2) })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+ad4ba72f42647f1580d698778c1e2a6a
+  dasec :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdasec ww1 }) -}
+2e23d3f89bbab048114855a5b4cccf1b
+  dasech :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdasech ww1 }) -}
+3471611f5c0b0bddcf96f1629ebb407e
+  dasin :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdasin ww1 }) -}
+a7ca873ef57317d490342e5bd2019e5f
+  dasinh :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case x of wild { GHC.Types.D# x1 ->
+                    case GHC.Prim./##
+                           1.0##
+                           (GHC.Prim.sqrtDouble#
+                              (GHC.Prim.+## 1.0## (GHC.Prim.*## x1 x1))) of wild2 { DEFAULT ->
+                    GHC.Types.D# wild2 } })) -}
+933859e3e65e7ab8301e52945d277286
+  datan :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case x of wild { GHC.Types.D# x1 ->
+                    case GHC.Prim./##
+                           1.0##
+                           (GHC.Prim.+## 1.0## (GHC.Prim.*## x1 x1)) of wild2 { DEFAULT ->
+                    GHC.Types.D# wild2 } })) -}
+26341c5030b8ef017f6093873a658dbf
+  datanh :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdatanh ww1 }) -}
+287f8c4b91315b2dd36ffd0584b9b68e
+  dc :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m2,
+     Unfolding: InlineRule (1, True, True)
+                (\ (c :: GHC.Types.Double) -> BasicDerivatives.dc1) -}
+a725e6d8fbce6aab748e39fab11aef1e
+  dc1 :: GHC.Base.Maybe GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ GHC.Types.Double
+                   BasicDerivatives.dc2) -}
+6c153c057fd501b4c6b453b3681fc12f
+  dc2 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.0##) -}
+78bf7e36a1159f6935cd83fbb0b93828
+  dcos :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case x of wild { GHC.Types.D# x1 ->
+                    GHC.Types.D#
+                      (GHC.Prim.negateDouble# (GHC.Prim.sinDouble# x1)) })) -}
+c99e5aa1a56f503ced67b217c1d201cb
+  dcosh :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.sinhDouble x)) -}
+ade471246c9f78691410201e03e3a897
+  dcot :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdcot ww1 }) -}
+15cd281eceeb1e16ecc5c3e0ab2095dc
+  dcoth :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdcoth ww1 }) -}
+46b030cf0ff382a6b1e6c0eeea999d1e
+  dcsc :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (let {
+                           x2 :: GHC.Prim.Double# = GHC.Prim.sinDouble# x1
+                         } in
+                         case GHC.Prim./##
+                                (GHC.Prim.cosDouble# x1)
+                                (GHC.Prim.*## x2 x2) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.negateDouble# wild2) })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+cc1e32f8a2ac39a374695663e4021260
+  dcsch :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdcsch ww1 }) -}
+234e1fc055c880d57d48ac2777c5536d
+  dexp :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.expDouble x)) -}
+47750c13a2c93481e83b938144d730f0
+  dlog :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./## 1.0## x1 of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 }) } }) -}
+4d8a644ad9b815ab03b87807df4e2144
+  dlog1 :: GHC.Types.Double
+  {- Unfolding: (case GHC.Prim.logDouble#
+                        10.0## of wild1 { DEFAULT ->
+                 GHC.Types.D# wild1 }) -}
+24fa94f6af91a5e8408ff999d5f5fdfc
+  dlog10 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=## x1 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case BasicDerivatives.dlog1 of wild2 { GHC.Types.D# y ->
+                         case GHC.Prim./## 1.0## (GHC.Prim.*## x1 y) of wild3 { DEFAULT ->
+                         GHC.Types.D# wild3 } })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+a47d7956b8fc32b2ff4c8646c9afd7c2
+  dsec :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.cosDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (let {
+                           x2 :: GHC.Prim.Double# = GHC.Prim.cosDouble# x1
+                         } in
+                         case GHC.Prim./##
+                                (GHC.Prim.sinDouble# x1)
+                                (GHC.Prim.*## x2 x2) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+e3fedef515ca9aa62e11404c3b0c6cb7
+  dsech :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdsech ww1 }) -}
+0e50a4b351c8c1d77a613ab26ee09366
+  dsin :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.cosDouble x)) -}
+a5a313bf2e71c796c9ba29427efaec13
+  dsinh :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.coshDouble x)) -}
+419d93196515a6bc4d7a2d801a782445
+  dtan :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdtan ww1 }) -}
+6f83fb3f6490d82766daed5c4d55eab3
+  dtanh :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case w of wild { GHC.Types.D# x ->
+                    case GHC.Prim.tagToEnum#
+                           @ GHC.Types.Bool
+                           (GHC.Prim.==## (GHC.Prim.coshDouble# x) 0.0##) of wild1 {
+                      GHC.Types.False
+                      -> case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.coshDouble# x) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.*## wild2 wild2) }
+                      GHC.Types.True -> GHC.Types.D# 0.0## } })) -}
+f9f13b22222350034f75506353fee01f
+  dxToX :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim.logDouble# x1 of wild2 { DEFAULT ->
+                         GHC.Types.D#
+                           (GHC.Prim.*##
+                              (GHC.Prim.**## x1 x1)
+                              (GHC.Prim.+## 1.0## wild2)) }) } }) -}
+e692f72858e474822cc62efdda6ebb1b
+  exp' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.expDouble x)) -}
+5b4790afe186c69e37f454507fd0c32d
+  log' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim.logDouble# x1 of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 }) } }) -}
+5ae6265bbfb130ca7106205cc934caf6
+  log10 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim.logDouble# x1 of wild2 { DEFAULT ->
+                         case GHC.Prim.logDouble# 10.0## of wild3 { DEFAULT ->
+                         case GHC.Prim./## wild2 wild3 of wild4 { DEFAULT ->
+                         GHC.Types.D# wild4 } } }) } }) -}
+dd9aa3d7ab4dd1cb3aba484f73c737ef
+  sec :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.cosDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.cosDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+eb71e36efd58314987e6b581bcda178b
+  sech :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.coshDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.coshDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+e65ea2c161e4e3e69e649cd711337f06
+  sin' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.sinDouble x)) -}
+8e3fbc03102a71ed239cefceb824757a
+  sinh' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.sinhDouble x)) -}
+4378277357bcdf8b8fa52f4693fc69cb
+  takeMaybePM :: GHC.Base.Maybe GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Base.Maybe GHC.Types.Double) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> BasicDerivatives.dc2 GHC.Base.Just x -> x }) -}
+29013c59a7deef276782cbcc0e3bbe0c
+  takeMaybeTD :: GHC.Base.Maybe GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Base.Maybe GHC.Types.Double) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> BasicDerivatives.takeMaybeTD1
+                   GHC.Base.Just x -> x }) -}
+e2bd5a85244b034d05b45753307a4a34
+  takeMaybeTD1 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 1.0##) -}
+abf114910c346f5ae74fa6da3bc8c548
+  tan' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.cosDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (GHC.Types.D# (GHC.Prim.tanDouble# x1))
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+c55553160cc0f177f7732930019449c6
+  tanh' :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.tanhDouble x)) -}
+99dff30f2873fc9bb7ed2929160d604c
+  xToX :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (GHC.Types.D# (GHC.Prim.**## x1 x1)) } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
