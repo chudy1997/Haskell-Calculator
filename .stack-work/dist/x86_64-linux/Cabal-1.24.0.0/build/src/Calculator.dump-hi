@@ -1,21 +1,18 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-15 11:40:03.356872 UTC
+2017-01-16 09:49:54.430058 UTC
 
 interface calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:Calculator 8001
-  interface hash: 4797e99a659f96e604596c347722e9bd
-  ABI hash: 88e31d794138dc4ba5504dc4fdc23d24
-  export-list hash: 52662e784b5217847a21477e18115d66
+  interface hash: 3287e0d3bfffed75ef4ddd18eac4c8ed
+  ABI hash: 026e5a5687a9ef29e196b9c9ac4c2ba7
+  export-list hash: a635dea9c323851add6c07371a1ef102
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
   sig of: Nothing
   used TH splices: False
   where
 exports:
-  Data.OldList.words
-  Calculator.calculate
   Calculator.function
-  Calculator.isSignOrSpace
 module dependencies: BasicDerivatives ParsingFunctions
 package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
                       integer-gmp-1.0.0.1
@@ -34,14 +31,14 @@ import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
 import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
 import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
 import  -/  base-4.9.0.0:Text.Read 9c1be14f7e5eac8b18bcb566c5763677
-import  -/  BasicDerivatives 4baa3e69c848b3c7ab778d32d2a5805b
-  exports: 2120a65daf2f554040b82f162ee6cdb9
+import  -/  BasicDerivatives 857a0917d6805129d904585615d5649b
+  exports: 0f7b8b43f56912e4241cd2bfb4002737
   takeMaybePM 4378277357bcdf8b8fa52f4693fc69cb
   takeMaybeTD 29013c59a7deef276782cbcc0e3bbe0c
-import  -/  ParsingFunctions 5a0f0e733967d0cd9b884f69adda0208
-  exports: 041aabb93aec91404f895c0b1ae6e7f9
-  d 3bb80dcc27cec15e204e8d4fc060a791
-  e 51ea87eb2fc5fca442fe104176abcd69
+import  -/  ParsingFunctions 7fb2ea04734e1604d05b883c05562592
+  exports: 77e7f6acdda0227377e66ad99767ce2c
+  d 226849a9698fabb5c49e771ba9ce6745
+  e a6ca4b0ec3e40143058856b3945fbe58
   sign dad23f4f5f08c1d81daa012f7a7f287c
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 0b491ed5c3df0dec391d8aeecf80951e
@@ -59,72 +56,10 @@ a718411a2bcfb97ca6cfe887bf45b5e9
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ"#) -}
-f0a2c32b1f6dbcf8156810c716959892
-  $wcalculate ::
-    [[GHC.Types.Char]] -> GHC.Types.Double -> GHC.Prim.Double#
-  {- Arity: 2, Strictness: <S,1*U><L,U(U)>, Inline: [0] -}
-5d3fa30594c49468f42d0638a0345448
-  calculate ::
-    [[GHC.Types.Char]] -> GHC.Types.Double -> GHC.Types.Double
-  {- Arity: 2, Strictness: <S,1*U><L,U(U)>m, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ (w :: [[GHC.Types.Char]]) (w1 :: GHC.Types.Double) ->
-                 case Calculator.$wcalculate w w1 of ww { DEFAULT ->
-                 GHC.Types.D# ww }) -}
-03c9a9865eb48746d70d2d75679d4340
+268332e4efe1f505430a4edd66e420f8
   function ::
     [GHC.Types.Char] -> [GHC.Types.Char] -> [GHC.Types.Char]
-  {- Arity: 2, Strictness: <L,1*U><L,U>,
-     Unfolding: (\ (functions :: [GHC.Types.Char])
-                   (arg :: [GHC.Types.Char]) ->
-                 GHC.CString.unpackAppendCString#
-                   " = "#
-                   (case Calculator.$wcalculate
-                           (Data.OldList.words functions)
-                           (case Text.Read.readEither6
-                                   @ GHC.Types.Double
-                                   (Text.ParserCombinators.ReadP.run
-                                      @ GHC.Types.Double
-                                      Calculator.function3
-                                      arg) of wild {
-                              [] -> Calculator.function2
-                              : x ds
-                              -> case ds of wild1 {
-                                   [] -> x
-                                   : ipv ipv1 -> Calculator.function1 } }) of ww { DEFAULT ->
-                    GHC.Float.$w$sshowSignedFloat
-                      GHC.Float.$fShowDouble_$sshowFloat
-                      GHC.Show.shows22
-                      ww
-                      (GHC.Types.[] @ GHC.Types.Char) })) -}
-ce241ef2f465ac671acd4844ce5376db
-  function1 :: GHC.Types.Double
-  {- Strictness: x -}
-0f44d80700ef33da9bab418f270e4333
-  function2 :: GHC.Types.Double
-  {- Strictness: x -}
-619ba62037aa97102d3a89a48a56a06f
-  function3 :: Text.ParserCombinators.ReadP.P GHC.Types.Double
-  {- Unfolding: ((GHC.Read.$fReadDouble9
-                    GHC.Read.$fReadDouble_$sconvertFrac
-                    Text.ParserCombinators.ReadPrec.minPrec)
-                   `cast`
-                 (Text.ParserCombinators.ReadP.N:ReadP[0] <GHC.Types.Double>_R)
-                   @ GHC.Types.Double
-                   (Text.Read.readEither5 @ GHC.Types.Double)) -}
-7fd3997383f6ede4d14e67f9f01e18ab
-  isSignOrSpace :: GHC.Types.Char -> GHC.Types.Bool
-  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
-     Unfolding: InlineRule (1, True, False)
-                (\ (c :: GHC.Types.Char) ->
-                 case c of wild { GHC.Types.C# x ->
-                 case x of wild1 {
-                   DEFAULT -> GHC.Types.False
-                   ' '# -> GHC.Types.True
-                   '*'# -> GHC.Types.True
-                   '+'# -> GHC.Types.True
-                   '-'# -> GHC.Types.True
-                   '/'# -> GHC.Types.True } }) -}
+  {- Arity: 2, Strictness: <L,1*U><L,U> -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-15 11:40:06.537377 UTC
+2017-01-16 10:00:29.043469 UTC
 
 interface main@main:Main 8001
-  interface hash: 4c2d06da2c49007b65d507f752786fa9
-  ABI hash: 5bf477a3d09864bbadbcd431e4e24e11
-  export-list hash: 447d0e4fe98f1a42170c6a4afecae52b
+  interface hash: 2a9d18e1cedcc5dff0e48070f1fd6e18
+  ABI hash: 10deb5155f39136e99743e502560aed9
+  export-list hash: f6490a97a3f3e9fb4cf58c7912c1c997
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 18b858d0992bfae270bd958d12494f11
   sig of: Nothing
@@ -13,6 +13,7 @@ interface main@main:Main 8001
   where
 exports:
   Main.main
+  Main.programMain
 module dependencies:
 package dependencies: base-4.9.0.0*
                       calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ
@@ -23,12 +24,14 @@ family instance modules: base-4.9.0.0:Control.Applicative
                          base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
                          base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
                          base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
 import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
 import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
 import  -/  base-4.9.0.0:System.IO eb1d40aa793a4047069a5023f2ebcfe3
-import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:BasicDerivatives 4baa3e69c848b3c7ab778d32d2a5805b
-import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:Calculator 88e31d794138dc4ba5504dc4fdc23d24
-import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:ParsingFunctions 5a0f0e733967d0cd9b884f69adda0208
+import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:BasicDerivatives 857a0917d6805129d904585615d5649b
+import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:Calculator 026e5a5687a9ef29e196b9c9ac4c2ba7
+import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:ParsingFunctions 7fb2ea04734e1604d05b883c05562592
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
 d6831ef04cb9301b090dfae6f7bb7ec7
@@ -43,22 +46,21 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-011b74087d34a6e45de6a0888cec8b05
+5436a27a98d0341527303d4978e47ee6
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-2371079c3ad3c31ee3f493a0a4f731a7
+e67e6f4067a082a6a8432d82c1d8e61e
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U>,
-     Unfolding: InlineRule (1, True, False)
-                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         Main.main3
-                        GHC.Types.True
+                        GHC.Types.False
                         s of ds1 { (#,#) ipv ipv1 ->
                  Main.main2 ipv }) -}
 ee6c40491fc3d7de79463334122afe56
@@ -66,11 +68,18 @@ ee6c40491fc3d7de79463334122afe56
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U> -}
-6435085a9e0e025aecabb82892e117dc
+281a90849b2384a49c86081b70e0710e
   main3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
-                   "Enter your function to differentiation and press enter:"#) -}
-86d051a4e4062f58e0ba12a3ceceb7d0
+                   "\n\
+                   \Calculator of derivatives\n\
+                   \\n\
+                   \Rules:\n\
+                   \1. You have to separable input with spaces!\n\
+                   \2. You can only use one operation!\n\
+                   \3. Follow the instructions precisely\n\
+                   \\n"#) -}
+64ffea5fae764515f2391e3169946481
   main4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -78,6 +87,11 @@ ee6c40491fc3d7de79463334122afe56
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+257a737671036d0fcdaedbd8441867f8
+  programMain :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main2 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

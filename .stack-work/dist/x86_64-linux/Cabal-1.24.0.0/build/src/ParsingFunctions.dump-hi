@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-15 11:00:50.725218 UTC
+2017-01-16 09:49:50.454433 UTC
 
 interface calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:ParsingFunctions 8001
-  interface hash: 0068ced1036e76652296d8e62e72a974
-  ABI hash: 5a0f0e733967d0cd9b884f69adda0208
-  export-list hash: 041aabb93aec91404f895c0b1ae6e7f9
+  interface hash: fd10cc046ba1b2220242f140dfcb6594
+  ABI hash: 7fb2ea04734e1604d05b883c05562592
+  export-list hash: 77e7f6acdda0227377e66ad99767ce2c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
   sig of: Nothing
@@ -14,7 +14,6 @@ interface calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:ParsingFunctions 8001
 exports:
   ParsingFunctions.d
   ParsingFunctions.e
-  ParsingFunctions.isNumber
   ParsingFunctions.sign
 module dependencies: BasicDerivatives
 package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
@@ -31,65 +30,69 @@ import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
 import  -/  base-4.9.0.0:GHC.Unicode 2343b0871604cc5116abba8f24d75b42
 import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
 import  -/  base-4.9.0.0:Text.Read 9c1be14f7e5eac8b18bcb566c5763677
-import  -/  BasicDerivatives 4baa3e69c848b3c7ab778d32d2a5805b
-  exports: 2120a65daf2f554040b82f162ee6cdb9
-  acos' 00b93e22904b8d3bde9c6dfd8dbbd3de
-  acosh' 5d1ed031bbe9f52453f368bdf24f2f25
-  acot 73995bcef9814226a4b14aafdfdde778
-  acoth 586159323f4275da72c159639261728f
-  acsc 130ef86f1a3f44856f768b7e47011e25
-  acsch c182714a2ae3c92d22c00f7124602ab5
-  asec d57c500e842084827f03ee2b05fb40b1
-  asech b4f9ad64421e95625d9c3a971ee9b0fe
-  asin' 4ae20191f0e2b8bc5921f66469d575cd
-  asinh' 6606f02ccece848b0003a35ac8e87e04
-  atan' 2970807e67e8c80979bbc283b9563b4b
-  atanh' ea21134a608e277e969604e2e1c2cf2a
-  cos' 8b45825972d5794edd6715615b40eb7f
-  cosh' 731c7cd50859063060e169714a1c4603
-  cot 6c0f450108f6fdcd5c68b26a3846baeb
-  coth 513cbbece66990871bfaa8eb1d6f5fe8
-  csc eb8b41f643026ba89b3c9d283af164d4
-  csch 1b402eb1925e005e4d52acac1494da30
-  dacos 602eb217582631eab1ac2a51b6bb78a0
-  dacosh 7ece311744d558bc5e8bb2bc440445a0
-  dacot 938b294bd975516958780fc0be7d79ed
-  dacoth 5772b89edf881aed01e9611d71ed5d83
-  dacsc 7b548529accd98afea676cf5412eca71
-  dacsch a32a2e89006da477d661a7dce21b0bbc
-  dasec ad4ba72f42647f1580d698778c1e2a6a
-  dasech 2e23d3f89bbab048114855a5b4cccf1b
-  dasin 3471611f5c0b0bddcf96f1629ebb407e
-  dasinh a7ca873ef57317d490342e5bd2019e5f
-  datan 933859e3e65e7ab8301e52945d277286
-  datanh 26341c5030b8ef017f6093873a658dbf
-  dc 287f8c4b91315b2dd36ffd0584b9b68e
-  dcos 78bf7e36a1159f6935cd83fbb0b93828
-  dcosh c99e5aa1a56f503ced67b217c1d201cb
-  dcot ade471246c9f78691410201e03e3a897
-  dcoth 15cd281eceeb1e16ecc5c3e0ab2095dc
-  dcsc 46b030cf0ff382a6b1e6c0eeea999d1e
-  dcsch cc1e32f8a2ac39a374695663e4021260
-  dexp 234e1fc055c880d57d48ac2777c5536d
-  dlog 47750c13a2c93481e83b938144d730f0
-  dlog10 24fa94f6af91a5e8408ff999d5f5fdfc
-  dsec a47d7956b8fc32b2ff4c8646c9afd7c2
-  dsech e3fedef515ca9aa62e11404c3b0c6cb7
-  dsin 0e50a4b351c8c1d77a613ab26ee09366
-  dsinh a5a313bf2e71c796c9ba29427efaec13
-  dtan 419d93196515a6bc4d7a2d801a782445
-  dtanh 6f83fb3f6490d82766daed5c4d55eab3
-  dxToX f9f13b22222350034f75506353fee01f
-  exp' e692f72858e474822cc62efdda6ebb1b
-  log' 5b4790afe186c69e37f454507fd0c32d
-  log10 5ae6265bbfb130ca7106205cc934caf6
-  sec dd9aa3d7ab4dd1cb3aba484f73c737ef
-  sech eb71e36efd58314987e6b581bcda178b
-  sin' e65ea2c161e4e3e69e649cd711337f06
-  sinh' 8e3fbc03102a71ed239cefceb824757a
-  tan' abf114910c346f5ae74fa6da3bc8c548
-  tanh' c55553160cc0f177f7732930019449c6
-  xToX 99dff30f2873fc9bb7ed2929160d604c
+import  -/  BasicDerivatives 857a0917d6805129d904585615d5649b
+  exports: 0f7b8b43f56912e4241cd2bfb4002737
+  aToX add10ddae0cd81b9e2798e08fa9a162a
+  acos' 63df19505514b5bb3cec93441754eb0d
+  acosh' b4e22173c324ddaedc5bfcfe45bf5d03
+  acot ff48d0e535a1b49c22d5892f8a602582
+  acoth 466d91a1e166bc627e46d9b325999e54
+  acsc 545d3fbc0c990d06f98c3e31932c33d4
+  acsch f6896668d3b8bfcb4c98d621bfee0ddf
+  asec 51eae852c1d33c7106343dca6a4a190c
+  asech 0ed933906a65a3788664b5f6a56df552
+  asin' fbca9cd467f913ede5f832abc0c34676
+  asinh' 2f9d14bb1fea4f46c35e7f6bceab6f17
+  atan' 11aed03bc73bde5d535acf86d1b096f8
+  atanh' 2265e5135381148d51501d8d19255963
+  cos' f3a4e8fa0a8abd6877a3b4f216c5ed94
+  cosh' 35516a6742bfc411ef52bddf24e77d9c
+  cot 5d037efdd607af6b161fcc75a8273251
+  coth 8096c18a76936c5e9ae0ecc092acb875
+  csc eba81120de69ea5800673c15ac820724
+  csch badf41bf30903cd42d2c198301ea8362
+  daToX ab91c8c5d94404a5a2166221df97b25e
+  dacos d8b7e81dbd781eafc4078b240de11e2a
+  dacosh 0f6736ae7fb4498d6e0c880add97386b
+  dacot 00758ed4c223a3bf7e8a78511e790beb
+  dacoth bcf96e5d9acae6e831db6ec909723c62
+  dacsc bd4154254167cf9a2fb454327d1588a0
+  dacsch 95b6addd4bdc0436a6b03d11ebc8864b
+  dasec 6e724fea62c807cacf0e654df5729a60
+  dasech cbe22e3ddde53e66a2c594e34e7de419
+  dasin 893be7f295b1167aec6d5aba8b5de893
+  dasinh ebe127a70e6b8db930877878779ea650
+  datan 107a1dcb123e955d61901e43bd7d3c82
+  datanh 9aee0ce50209182abceb7c87ab7f3b49
+  dc c57c80c534b1ebc1dc10518f38b3b58e
+  dcos 75aa2eb2cf6a1a01fe844f6f77d66a65
+  dcosh ce7950d88aa458d6dddea17bdfedeb48
+  dcot a1e8c16d2fdd9ae16ffc6cdeb2e718e5
+  dcoth 92cd5c06f667ef8593e2c4bb09710dd1
+  dcsc 5371b43d8870f3bcc629b73fa93ab3b4
+  dcsch fa8b17a67e6d2a9627a147624c1a788d
+  dexp 0b1d2aa7e48dfa051bb716fdd2998449
+  dlog 3237ba1a131a17b714630ed563dc902a
+  dloga 655c90ca8d593730293f186ad4ecbce3
+  dsec f0019888ccb6e6c5bca159ec1a8c0213
+  dsech 5fa5a757799fed1c2f47864e565cefb6
+  dsin 2e1613d330a5a28dce3ff5081f8abc29
+  dsinh 40399d60158f78d52c549bb9d4208624
+  dtan 49990bbac8cdfbab9b80a86ee8225783
+  dtanh de56c74989a30410cd17a520f55e29ee
+  dxToN db7112b49f7ead1e31d2a91af0af8296
+  dxToX 476fa3d400e8a514c64dbb698f1ebedf
+  exp' 401805c869eae33a9062b02f04bc4054
+  log' 9536904f3534ea74a0160d3191c65ef1
+  loga 8647a80415fed3a9029e64ab2b77efbc
+  sec 4e4dd3d88ee412cdb4421fce57d0b6a2
+  sech 59ccf5b8f9ab16fb3f210462f1994a6f
+  sin' cdc3c93fbcd751a44721285014f9677a
+  sinh' fb4e8ef8f491041ad1905d8d14d9c334
+  tan' 691bac2138d53096a75a8ad11430ff7c
+  tanh' d4dd552afca99b06a923222116eeb83f
+  xToN 93ea061bb2b9b780a140e05d3e0ede77
+  xToX ee85c540a0dec9261c48b441e6a1b0d0
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 b6d40fde94f06d3d8fb81bce72ed15ae
   $trModule :: GHC.Types.Module
@@ -145,420 +148,741 @@ a2ec300c59a1020faad8efbc2da0b7d5
                              -> case w1 of wild3 { GHC.Types.D# x ->
                                 case w2 of wild4 { GHC.Types.D# y -> GHC.Prim./## x y } }
                              : ipv ipv1 -> 0.0## } } } }) -}
-3bb80dcc27cec15e204e8d4fc060a791
+226849a9698fabb5c49e771ba9ce6745
   d ::
     [GHC.Types.Char]
-    -> GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (f :: [GHC.Types.Char]) ->
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 2, Strictness: <S,U><L,U(U)>,
+     Unfolding: (\ (f :: [GHC.Types.Char]) (a :: GHC.Types.Double) ->
                  case ParsingFunctions.isNumber f of wild {
                    GHC.Types.False
-                   -> case GHC.Base.eqString f ParsingFunctions.d29 of wild1 {
+                   -> case GHC.Base.eqString f ParsingFunctions.d59 of wild1 {
                         GHC.Types.False
-                        -> case GHC.Base.eqString f ParsingFunctions.d28 of wild2 {
+                        -> case GHC.Base.eqString f ParsingFunctions.d58 of wild2 {
                              GHC.Types.False
-                             -> case GHC.Base.eqString f ParsingFunctions.d27 of wild3 {
+                             -> case GHC.Base.eqString f ParsingFunctions.d57 of wild3 {
                                   GHC.Types.False
-                                  -> case GHC.Base.eqString f ParsingFunctions.d26 of wild4 {
+                                  -> case GHC.Base.eqString f ParsingFunctions.d56 of wild4 {
                                        GHC.Types.False
-                                       -> case GHC.Base.eqString f ParsingFunctions.d25 of wild5 {
+                                       -> case GHC.Base.eqString f ParsingFunctions.d55 of wild5 {
                                             GHC.Types.False
                                             -> case GHC.Base.eqString
                                                       f
-                                                      ParsingFunctions.d24 of wild6 {
+                                                      ParsingFunctions.d54 of wild6 {
                                                  GHC.Types.False
                                                  -> case GHC.Base.eqString
                                                            f
-                                                           ParsingFunctions.d23 of wild7 {
+                                                           ParsingFunctions.d53 of wild7 {
                                                       GHC.Types.False
                                                       -> case GHC.Base.eqString
                                                                 f
-                                                                ParsingFunctions.d22 of wild8 {
+                                                                ParsingFunctions.d52 of wild8 {
                                                            GHC.Types.False
                                                            -> case GHC.Base.eqString
                                                                      f
-                                                                     ParsingFunctions.d21 of wild9 {
+                                                                     ParsingFunctions.d51 of wild9 {
                                                                 GHC.Types.False
                                                                 -> case GHC.Base.eqString
                                                                           f
-                                                                          ParsingFunctions.d20 of wild10 {
+                                                                          ParsingFunctions.d50 of wild10 {
                                                                      GHC.Types.False
                                                                      -> case GHC.Base.eqString
                                                                                f
-                                                                               ParsingFunctions.d19 of wild11 {
+                                                                               ParsingFunctions.d49 of wild11 {
                                                                           GHC.Types.False
                                                                           -> case GHC.Base.eqString
                                                                                     f
-                                                                                    ParsingFunctions.d18 of wild12 {
+                                                                                    ParsingFunctions.d48 of wild12 {
                                                                                GHC.Types.False
                                                                                -> case GHC.Base.eqString
                                                                                          f
-                                                                                         ParsingFunctions.d17 of wild13 {
+                                                                                         ParsingFunctions.d47 of wild13 {
                                                                                     GHC.Types.False
                                                                                     -> case GHC.Base.eqString
                                                                                               f
-                                                                                              ParsingFunctions.d16 of wild14 {
+                                                                                              ParsingFunctions.d46 of wild14 {
                                                                                          GHC.Types.False
                                                                                          -> case GHC.Base.eqString
                                                                                                    f
-                                                                                                   ParsingFunctions.d15 of wild15 {
+                                                                                                   ParsingFunctions.d45 of wild15 {
                                                                                               GHC.Types.False
                                                                                               -> case GHC.Base.eqString
                                                                                                         f
-                                                                                                        ParsingFunctions.d14 of wild16 {
+                                                                                                        ParsingFunctions.d44 of wild16 {
                                                                                                    GHC.Types.False
                                                                                                    -> case GHC.Base.eqString
                                                                                                              f
-                                                                                                             ParsingFunctions.d13 of wild17 {
+                                                                                                             ParsingFunctions.d43 of wild17 {
                                                                                                         GHC.Types.False
                                                                                                         -> case GHC.Base.eqString
                                                                                                                   f
-                                                                                                                  ParsingFunctions.d12 of wild18 {
+                                                                                                                  ParsingFunctions.d42 of wild18 {
                                                                                                              GHC.Types.False
                                                                                                              -> case GHC.Base.eqString
                                                                                                                        f
-                                                                                                                       ParsingFunctions.d11 of wild19 {
+                                                                                                                       ParsingFunctions.d41 of wild19 {
                                                                                                                   GHC.Types.False
                                                                                                                   -> case GHC.Base.eqString
                                                                                                                             f
-                                                                                                                            ParsingFunctions.d10 of wild20 {
+                                                                                                                            ParsingFunctions.d40 of wild20 {
                                                                                                                        GHC.Types.False
                                                                                                                        -> case GHC.Base.eqString
                                                                                                                                  f
-                                                                                                                                 ParsingFunctions.d9 of wild21 {
+                                                                                                                                 ParsingFunctions.d39 of wild21 {
                                                                                                                             GHC.Types.False
                                                                                                                             -> case GHC.Base.eqString
                                                                                                                                       f
-                                                                                                                                      ParsingFunctions.d8 of wild22 {
+                                                                                                                                      ParsingFunctions.d38 of wild22 {
                                                                                                                                  GHC.Types.False
                                                                                                                                  -> case GHC.Base.eqString
                                                                                                                                            f
-                                                                                                                                           ParsingFunctions.d7 of wild23 {
+                                                                                                                                           ParsingFunctions.d37 of wild23 {
                                                                                                                                       GHC.Types.False
                                                                                                                                       -> case GHC.Base.eqString
                                                                                                                                                 f
-                                                                                                                                                ParsingFunctions.d6 of wild24 {
+                                                                                                                                                ParsingFunctions.d36 of wild24 {
                                                                                                                                            GHC.Types.False
                                                                                                                                            -> case GHC.Base.eqString
                                                                                                                                                      f
-                                                                                                                                                     ParsingFunctions.d5 of wild25 {
+                                                                                                                                                     ParsingFunctions.d35 of wild25 {
                                                                                                                                                 GHC.Types.False
                                                                                                                                                 -> case GHC.Base.eqString
                                                                                                                                                           f
-                                                                                                                                                          ParsingFunctions.d4 of wild26 {
+                                                                                                                                                          ParsingFunctions.d34 of wild26 {
                                                                                                                                                      GHC.Types.False
                                                                                                                                                      -> case GHC.Base.eqString
                                                                                                                                                                f
-                                                                                                                                                               ParsingFunctions.d3 of wild27 {
+                                                                                                                                                               ParsingFunctions.d33 of wild27 {
                                                                                                                                                           GHC.Types.False
                                                                                                                                                           -> case GHC.Base.eqString
                                                                                                                                                                     f
-                                                                                                                                                                    ParsingFunctions.d2 of wild28 {
+                                                                                                                                                                    ParsingFunctions.d32 of wild28 {
                                                                                                                                                                GHC.Types.False
-                                                                                                                                                               -> ParsingFunctions.d1
+                                                                                                                                                               -> case GHC.Base.eqString
+                                                                                                                                                                         f
+                                                                                                                                                                         ParsingFunctions.d31 of wild29 {
+                                                                                                                                                                    GHC.Types.False
+                                                                                                                                                                    -> case GHC.Base.eqString
+                                                                                                                                                                              f
+                                                                                                                                                                              ParsingFunctions.d30 of wild30 {
+                                                                                                                                                                         GHC.Types.False
+                                                                                                                                                                         -> ParsingFunctions.d29
+                                                                                                                                                                         GHC.Types.True
+                                                                                                                                                                         -> ParsingFunctions.d28 }
+                                                                                                                                                                    GHC.Types.True
+                                                                                                                                                                    -> BasicDerivatives.dxToN
+                                                                                                                                                                         a }
                                                                                                                                                                GHC.Types.True
-                                                                                                                                                               -> BasicDerivatives.dxToX }
+                                                                                                                                                               -> ParsingFunctions.d27 }
                                                                                                                                                           GHC.Types.True
-                                                                                                                                                          -> BasicDerivatives.dtanh }
+                                                                                                                                                          -> ParsingFunctions.d26 }
                                                                                                                                                      GHC.Types.True
-                                                                                                                                                     -> BasicDerivatives.dtan }
+                                                                                                                                                     -> ParsingFunctions.d25 }
                                                                                                                                                 GHC.Types.True
-                                                                                                                                                -> BasicDerivatives.dsinh }
+                                                                                                                                                -> ParsingFunctions.d24 }
                                                                                                                                            GHC.Types.True
-                                                                                                                                           -> BasicDerivatives.dsin }
+                                                                                                                                           -> ParsingFunctions.d23 }
                                                                                                                                       GHC.Types.True
-                                                                                                                                      -> BasicDerivatives.dsech }
+                                                                                                                                      -> ParsingFunctions.d22 }
                                                                                                                                  GHC.Types.True
-                                                                                                                                 -> BasicDerivatives.dsec }
+                                                                                                                                 -> BasicDerivatives.dloga
+                                                                                                                                      a }
                                                                                                                             GHC.Types.True
-                                                                                                                            -> BasicDerivatives.dlog10 }
+                                                                                                                            -> ParsingFunctions.d21 }
                                                                                                                        GHC.Types.True
-                                                                                                                       -> BasicDerivatives.dlog }
+                                                                                                                       -> ParsingFunctions.d20 }
                                                                                                                   GHC.Types.True
-                                                                                                                  -> BasicDerivatives.dexp }
+                                                                                                                  -> ParsingFunctions.d19 }
                                                                                                              GHC.Types.True
-                                                                                                             -> BasicDerivatives.dcsch }
+                                                                                                             -> ParsingFunctions.d18 }
                                                                                                         GHC.Types.True
-                                                                                                        -> BasicDerivatives.dcsc }
+                                                                                                        -> ParsingFunctions.d17 }
                                                                                                    GHC.Types.True
-                                                                                                   -> BasicDerivatives.dcoth }
+                                                                                                   -> ParsingFunctions.d16 }
                                                                                               GHC.Types.True
-                                                                                              -> BasicDerivatives.dcot }
+                                                                                              -> ParsingFunctions.d15 }
                                                                                          GHC.Types.True
-                                                                                         -> BasicDerivatives.dcosh }
+                                                                                         -> ParsingFunctions.d14 }
                                                                                     GHC.Types.True
-                                                                                    -> BasicDerivatives.dcos }
+                                                                                    -> ParsingFunctions.d13 }
                                                                                GHC.Types.True
-                                                                               -> BasicDerivatives.datanh }
+                                                                               -> ParsingFunctions.d12 }
                                                                           GHC.Types.True
-                                                                          -> BasicDerivatives.datan }
+                                                                          -> ParsingFunctions.d11 }
                                                                      GHC.Types.True
-                                                                     -> BasicDerivatives.dasinh }
+                                                                     -> ParsingFunctions.d10 }
                                                                 GHC.Types.True
-                                                                -> BasicDerivatives.dasin }
-                                                           GHC.Types.True
-                                                           -> BasicDerivatives.dasech }
-                                                      GHC.Types.True -> BasicDerivatives.dasec }
-                                                 GHC.Types.True -> BasicDerivatives.dacsch }
-                                            GHC.Types.True -> BasicDerivatives.dacsc }
-                                       GHC.Types.True -> BasicDerivatives.dacoth }
-                                  GHC.Types.True -> BasicDerivatives.dacot }
-                             GHC.Types.True -> BasicDerivatives.dacosh }
-                        GHC.Types.True -> BasicDerivatives.dacos }
-                   GHC.Types.True -> BasicDerivatives.dc }) -}
-067470239ab22a522159abe073874a51
+                                                                -> ParsingFunctions.d9 }
+                                                           GHC.Types.True -> ParsingFunctions.d8 }
+                                                      GHC.Types.True -> ParsingFunctions.d7 }
+                                                 GHC.Types.True -> ParsingFunctions.d6 }
+                                            GHC.Types.True -> ParsingFunctions.d5 }
+                                       GHC.Types.True -> ParsingFunctions.d4 }
+                                  GHC.Types.True -> ParsingFunctions.d3 }
+                             GHC.Types.True -> ParsingFunctions.d2 }
+                        GHC.Types.True -> BasicDerivatives.daToX a }
+                   GHC.Types.True -> ParsingFunctions.d1 }) -}
+9a9c0ca8ee4411eb866e3d13bb0666db
   d1 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m2,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds1 :: GHC.Types.Double) -> BasicDerivatives.dc1) -}
+65359dea0df40e9ea1c8a58e84d156ed
+  d10 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdasin ww1 }) -}
+7f00c222aa605e326f35fb762cc1274c
+  d11 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case x of wild { GHC.Types.D# x1 ->
+                    case GHC.Prim./##
+                           1.0##
+                           (GHC.Prim.sqrtDouble#
+                              (GHC.Prim.+## 1.0## (GHC.Prim.*## x1 x1))) of wild2 { DEFAULT ->
+                    GHC.Types.D# wild2 } })) -}
+2c173e58c9d788cdf1c14005e947e3b4
+  d12 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case x of wild { GHC.Types.D# x1 ->
+                    case GHC.Prim./##
+                           1.0##
+                           (GHC.Prim.+## 1.0## (GHC.Prim.*## x1 x1)) of wild2 { DEFAULT ->
+                    GHC.Types.D# wild2 } })) -}
+666dde47706a146acbe922208517bfb4
+  d13 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdatanh ww1 }) -}
+09680bb1f91918760db7709aed55f254
+  d14 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case x of wild { GHC.Types.D# x1 ->
+                    GHC.Types.D#
+                      (GHC.Prim.negateDouble# (GHC.Prim.sinDouble# x1)) })) -}
+fda7b80b71d1f140652c8f18583f455a
+  d15 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.sinhDouble x)) -}
+9845c8cdf4186150289e961459c0e45e
+  d16 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdcot ww1 }) -}
+dc51e31fd85e87dc3d887c89ceab4396
+  d17 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdcoth ww1 }) -}
+5e77f21845285f9fe4b17a7efd751d0a
+  d18 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (let {
+                           x2 :: GHC.Prim.Double# = GHC.Prim.sinDouble# x1
+                         } in
+                         case GHC.Prim./##
+                                (GHC.Prim.cosDouble# x1)
+                                (GHC.Prim.*## x2 x2) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.negateDouble# wild2) })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+e37c2b632212171314dfb50a019b91fd
+  d19 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdcsch ww1 }) -}
+f6ef8c4fa12c7975d5f304f2c3bc6f9b
+  d2 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdacos ww1 }) -}
+963164bddc30b77efb94a78b61ccffcd
+  d20 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.expDouble x)) -}
+d1bf88ca0736865ba69f423d852de916
+  d21 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./## 1.0## x1 of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 }) } }) -}
+abe1119ea4e12568b2d1ce759545dff0
+  d22 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.cosDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (let {
+                           x2 :: GHC.Prim.Double# = GHC.Prim.cosDouble# x1
+                         } in
+                         case GHC.Prim./##
+                                (GHC.Prim.sinDouble# x1)
+                                (GHC.Prim.*## x2 x2) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+eda9e5a882293dedf2fa71f80c9d1201
+  d23 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdsech ww1 }) -}
+f78d1640400d246bdba878bc27e19c17
+  d24 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.cosDouble x)) -}
+e3557b05156ced1e0f568e3a07ce75a5
+  d25 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.coshDouble x)) -}
+f1f02b0a7c2bad489fc5d4f9a0dcfa31
+  d26 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdtan ww1 }) -}
+2bc1d6a380ad7978dddd340113f09e12
+  d27 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case w1 of wild { GHC.Types.D# x ->
+                    case GHC.Prim.tagToEnum#
+                           @ GHC.Types.Bool
+                           (GHC.Prim.==## (GHC.Prim.coshDouble# x) 0.0##) of wild1 {
+                      GHC.Types.False
+                      -> case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.coshDouble# x) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.*## wild2 wild2) }
+                      GHC.Types.True -> GHC.Types.D# 0.0## } })) -}
+330f555939902a72cfeb6966a8bcbf36
+  d28 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim.logDouble# x1 of wild2 { DEFAULT ->
+                         GHC.Types.D#
+                           (GHC.Prim.*##
+                              (GHC.Prim.**## x1 x1)
+                              (GHC.Prim.+## 1.0## wild2)) }) } }) -}
+1e5f5edc87291cf7ae00795d0143a6aa
+  d29 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
-                (\ (e4 :: GHC.Types.Double) ->
+                (\ (e27 :: GHC.Types.Double) ->
                  GHC.Base.Nothing @ GHC.Types.Double) -}
-50f4c16152699d5c9ae64b6f077716ab
-  d10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "log"#) -}
-249a71d052078850c5375dd567531350
-  d11 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "exp"#) -}
-5d04cf4509ee44a413a2c5e46d1b162b
-  d12 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "csch"#) -}
-b620f30ef09bdb271de3efc7d948ba48
-  d13 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "csc"#) -}
-b10a1ce16414716f36b7306b602c6e31
-  d14 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "coth"#) -}
-50ec1709ded15ba27480e19119086a05
-  d15 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "cot"#) -}
-1e30592c35e2fc4726b314dc8d50b6f4
-  d16 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "cosh"#) -}
-aa80671c261e8f9befaeaaf0a8012f92
-  d17 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "cos"#) -}
-7d3c8758a71721026977b277c01135db
-  d18 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "atanh"#) -}
-2c934fff0966e4d9d5c5a731bc76ffe2
-  d19 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "atan"#) -}
-70d34efc912946a600144d091e26e344
-  d2 :: [GHC.Types.Char]
+e6b31953e949100e1e27e3ebc5446c68
+  d3 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdacosh ww1 }) -}
+1df3a06f5a10a4ecb3a54519804f1e6a
+  d30 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "xToX"#) -}
-a43dad30eb38d260b578c89fc81a35b7
-  d20 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "asinh"#) -}
-b2a0dc0274c6a41082a5bf8953b5b8f0
-  d21 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "asin"#) -}
-f07271bb08b19d9a9efcdf32a3e5ec30
-  d22 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "asech"#) -}
-b121d0c92b7bc9028883f4e33fd3e618
-  d23 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "asec"#) -}
-a9131f79b74eada61b19f25b53a0b4b0
-  d24 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "acsch"#) -}
-897029874ff39d04ef9d1b4ae8178434
-  d25 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "acsc"#) -}
-1d41c3c664663f14273b2905fbcf3217
-  d26 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "acoth"#) -}
-3b50fa362ee0ad970e66438209b3e48c
-  d27 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "acot"#) -}
-c3594b02ec3a7a1a600d09d66b5f8d48
-  d28 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "acosh"#) -}
-53794ebf0669079319af408e0298d0c3
-  d29 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "acos"#) -}
-3c3b3adb1a63ae31b453c2618fe54299
-  d3 :: [GHC.Types.Char]
+35198eab4f081649c2f9b68b442c3ff5
+  d31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "xToN"#) -}
+e2b74f4d3f95f722a6c861758a5cef0f
+  d32 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "tanh"#) -}
-abb4933847ddb98f6e1b00098763946a
-  d4 :: [GHC.Types.Char]
+0a3471f2215777afffc8fc73f196da36
+  d33 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "tan"#) -}
-4cdfdcbbf6071a4cfc10a4b0a6427c43
-  d5 :: [GHC.Types.Char]
+d885533f0fa0deaa1033ae19bba30ffd
+  d34 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "sinh"#) -}
-4060c559c154e88a9520b4c6bd7f8cbb
-  d6 :: [GHC.Types.Char]
+e7ab90ef1ec05400f1762f81dda55468
+  d35 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "sin"#) -}
-ed10b9c3bf63fa3c98f2860dc1beca90
-  d7 :: [GHC.Types.Char]
+443903cbcb233ee8caf87126c23005bb
+  d36 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "sech"#) -}
-300f0fda02fbed7bb931b3821671f019
-  d8 :: [GHC.Types.Char]
+43b3203f8f45167a9e76b5906e2737bc
+  d37 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "sec"#) -}
-865cb572888ffce673351267ff41dc17
-  d9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "log10"#) -}
-51ea87eb2fc5fca442fe104176abcd69
+b52b40c08d5a02a779dad62ff30e76be
+  d38 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "loga"#) -}
+7ffd2d983c5b6b38724cc947a5eff8c4
+  d39 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "log"#) -}
+35d25e32d4dcc0aca6fd0dcd3c35dee7
+  d4 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (case x of wild { GHC.Types.D# x1 ->
+                    case GHC.Prim./##
+                           1.0##
+                           (GHC.Prim.+## 1.0## (GHC.Prim.*## x1 x1)) of wild2 { DEFAULT ->
+                    GHC.Types.D# (GHC.Prim.negateDouble# wild2) } })) -}
+cb6ed144a8a88e7d5497c05038379a25
+  d40 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "exp"#) -}
+0d7853b379ca4c5a47dfd81ef4dc62cd
+  d41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "csch"#) -}
+f36f968c9ed36c0e07ee6ecd93baddeb
+  d42 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "csc"#) -}
+96880fe91c4891e8a25cd8eae9325a9f
+  d43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "coth"#) -}
+9859dbf52026427cddc5568ea0bfbffc
+  d44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "cot"#) -}
+93d45e28163f6825f41c98deb50af9a4
+  d45 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "cosh"#) -}
+e67a3ca4f00b6443100976a58b580168
+  d46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "cos"#) -}
+e26f3d386a14a757eb57f0175adcb53f
+  d47 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "atanh"#) -}
+9ec0012b3098bcfd4a6dce084f97dfe0
+  d48 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "atan"#) -}
+525901dbcf1679f98183099ff7872ede
+  d49 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "asinh"#) -}
+1062fd4691044ecb3b23cd887c0445c7
+  d5 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdacoth ww1 }) -}
+67a90c2669222800c3557f30ca785b83
+  d50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "asin"#) -}
+8005f36394ae47bedc6b9d4d2753e464
+  d51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "asech"#) -}
+e90ee98c2800e1ee11ad2587ca7ab095
+  d52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "asec"#) -}
+8f55394c8de13327b35e68b988290448
+  d53 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "acsch"#) -}
+555431f337eeb42c46122c65634f4623
+  d54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "acsc"#) -}
+0ae0463b23f20de9b1872c516a103655
+  d55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "acoth"#) -}
+7f040a6c4edcfe72fd40f7a170b6a1e2
+  d56 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "acot"#) -}
+386ee6c76474f2438aee00048ad4d77b
+  d57 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "acosh"#) -}
+36cb546f1c696c24f82cfe92bdb3f9e7
+  d58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "acos"#) -}
+e7db6ddd7f6affcfd07f96571514f129
+  d59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "aToX"#) -}
+aa589e9b59e5708dc6f3c2758556142a
+  d6 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdacsc ww1 }) -}
+e8b34e572b1bbd57b1585a47131d6d15
+  d60 :: GHC.Types.Bool
+  {- Strictness: x -}
+fb2e832a82f1e487e9a900e0c3b9cdb4
+  d7 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## x1 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.*##
+                                   x1
+                                   (GHC.Prim.sqrtDouble#
+                                      (GHC.Prim.+##
+                                         1.0##
+                                         (GHC.Prim.*## x1 x1)))) of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.negateDouble# wild2) })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+85782e2e822806cfcb749e0159b96a6c
+  d8 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdasec ww1 }) -}
+a4672cea3abe4224fbc36bb1d400b7a9
+  d9 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wdasech ww1 }) -}
+dd22028f0e37fbd3ec26d3fded330247
+  d_isNumber' :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U> -}
+a6ca4b0ec3e40143058856b3945fbe58
   e ::
     [GHC.Types.Char]
-    -> GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (f :: [GHC.Types.Char]) ->
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 2, Strictness: <S,U><L,U(U)>,
+     Unfolding: (\ (f :: [GHC.Types.Char]) (a :: GHC.Types.Double) ->
                  case ParsingFunctions.isNumber f of wild {
                    GHC.Types.False
-                   -> case GHC.Base.eqString f ParsingFunctions.d29 of wild1 {
+                   -> case GHC.Base.eqString f ParsingFunctions.d59 of wild1 {
                         GHC.Types.False
-                        -> case GHC.Base.eqString f ParsingFunctions.d28 of wild2 {
+                        -> case GHC.Base.eqString f ParsingFunctions.d58 of wild2 {
                              GHC.Types.False
-                             -> case GHC.Base.eqString f ParsingFunctions.d27 of wild3 {
+                             -> case GHC.Base.eqString f ParsingFunctions.d57 of wild3 {
                                   GHC.Types.False
-                                  -> case GHC.Base.eqString f ParsingFunctions.d26 of wild4 {
+                                  -> case GHC.Base.eqString f ParsingFunctions.d56 of wild4 {
                                        GHC.Types.False
-                                       -> case GHC.Base.eqString f ParsingFunctions.d25 of wild5 {
+                                       -> case GHC.Base.eqString f ParsingFunctions.d55 of wild5 {
                                             GHC.Types.False
                                             -> case GHC.Base.eqString
                                                       f
-                                                      ParsingFunctions.d24 of wild6 {
+                                                      ParsingFunctions.d54 of wild6 {
                                                  GHC.Types.False
                                                  -> case GHC.Base.eqString
                                                            f
-                                                           ParsingFunctions.d23 of wild7 {
+                                                           ParsingFunctions.d53 of wild7 {
                                                       GHC.Types.False
                                                       -> case GHC.Base.eqString
                                                                 f
-                                                                ParsingFunctions.d22 of wild8 {
+                                                                ParsingFunctions.d52 of wild8 {
                                                            GHC.Types.False
                                                            -> case GHC.Base.eqString
                                                                      f
-                                                                     ParsingFunctions.d21 of wild9 {
+                                                                     ParsingFunctions.d51 of wild9 {
                                                                 GHC.Types.False
                                                                 -> case GHC.Base.eqString
                                                                           f
-                                                                          ParsingFunctions.d20 of wild10 {
+                                                                          ParsingFunctions.d50 of wild10 {
                                                                      GHC.Types.False
                                                                      -> case GHC.Base.eqString
                                                                                f
-                                                                               ParsingFunctions.d19 of wild11 {
+                                                                               ParsingFunctions.d49 of wild11 {
                                                                           GHC.Types.False
                                                                           -> case GHC.Base.eqString
                                                                                     f
-                                                                                    ParsingFunctions.d18 of wild12 {
+                                                                                    ParsingFunctions.d48 of wild12 {
                                                                                GHC.Types.False
                                                                                -> case GHC.Base.eqString
                                                                                          f
-                                                                                         ParsingFunctions.d17 of wild13 {
+                                                                                         ParsingFunctions.d47 of wild13 {
                                                                                     GHC.Types.False
                                                                                     -> case GHC.Base.eqString
                                                                                               f
-                                                                                              ParsingFunctions.d16 of wild14 {
+                                                                                              ParsingFunctions.d46 of wild14 {
                                                                                          GHC.Types.False
                                                                                          -> case GHC.Base.eqString
                                                                                                    f
-                                                                                                   ParsingFunctions.d15 of wild15 {
+                                                                                                   ParsingFunctions.d45 of wild15 {
                                                                                               GHC.Types.False
                                                                                               -> case GHC.Base.eqString
                                                                                                         f
-                                                                                                        ParsingFunctions.d14 of wild16 {
+                                                                                                        ParsingFunctions.d44 of wild16 {
                                                                                                    GHC.Types.False
                                                                                                    -> case GHC.Base.eqString
                                                                                                              f
-                                                                                                             ParsingFunctions.d13 of wild17 {
+                                                                                                             ParsingFunctions.d43 of wild17 {
                                                                                                         GHC.Types.False
                                                                                                         -> case GHC.Base.eqString
                                                                                                                   f
-                                                                                                                  ParsingFunctions.d12 of wild18 {
+                                                                                                                  ParsingFunctions.d42 of wild18 {
                                                                                                              GHC.Types.False
                                                                                                              -> case GHC.Base.eqString
                                                                                                                        f
-                                                                                                                       ParsingFunctions.d11 of wild19 {
+                                                                                                                       ParsingFunctions.d41 of wild19 {
                                                                                                                   GHC.Types.False
                                                                                                                   -> case GHC.Base.eqString
                                                                                                                             f
-                                                                                                                            ParsingFunctions.d10 of wild20 {
+                                                                                                                            ParsingFunctions.d40 of wild20 {
                                                                                                                        GHC.Types.False
                                                                                                                        -> case GHC.Base.eqString
                                                                                                                                  f
-                                                                                                                                 ParsingFunctions.d9 of wild21 {
+                                                                                                                                 ParsingFunctions.d39 of wild21 {
                                                                                                                             GHC.Types.False
                                                                                                                             -> case GHC.Base.eqString
                                                                                                                                       f
-                                                                                                                                      ParsingFunctions.d8 of wild22 {
+                                                                                                                                      ParsingFunctions.d38 of wild22 {
                                                                                                                                  GHC.Types.False
                                                                                                                                  -> case GHC.Base.eqString
                                                                                                                                            f
-                                                                                                                                           ParsingFunctions.d7 of wild23 {
+                                                                                                                                           ParsingFunctions.d37 of wild23 {
                                                                                                                                       GHC.Types.False
                                                                                                                                       -> case GHC.Base.eqString
                                                                                                                                                 f
-                                                                                                                                                ParsingFunctions.d6 of wild24 {
+                                                                                                                                                ParsingFunctions.d36 of wild24 {
                                                                                                                                            GHC.Types.False
                                                                                                                                            -> case GHC.Base.eqString
                                                                                                                                                      f
-                                                                                                                                                     ParsingFunctions.d5 of wild25 {
+                                                                                                                                                     ParsingFunctions.d35 of wild25 {
                                                                                                                                                 GHC.Types.False
                                                                                                                                                 -> case GHC.Base.eqString
                                                                                                                                                           f
-                                                                                                                                                          ParsingFunctions.d4 of wild26 {
+                                                                                                                                                          ParsingFunctions.d34 of wild26 {
                                                                                                                                                      GHC.Types.False
                                                                                                                                                      -> case GHC.Base.eqString
                                                                                                                                                                f
-                                                                                                                                                               ParsingFunctions.d3 of wild27 {
+                                                                                                                                                               ParsingFunctions.d33 of wild27 {
                                                                                                                                                           GHC.Types.False
                                                                                                                                                           -> case GHC.Base.eqString
                                                                                                                                                                     f
-                                                                                                                                                                    ParsingFunctions.d2 of wild28 {
+                                                                                                                                                                    ParsingFunctions.d32 of wild28 {
                                                                                                                                                                GHC.Types.False
-                                                                                                                                                               -> ParsingFunctions.d1
+                                                                                                                                                               -> case GHC.Base.eqString
+                                                                                                                                                                         f
+                                                                                                                                                                         ParsingFunctions.d31 of wild29 {
+                                                                                                                                                                    GHC.Types.False
+                                                                                                                                                                    -> case GHC.Base.eqString
+                                                                                                                                                                              f
+                                                                                                                                                                              ParsingFunctions.d30 of wild30 {
+                                                                                                                                                                         GHC.Types.False
+                                                                                                                                                                         -> ParsingFunctions.d29
+                                                                                                                                                                         GHC.Types.True
+                                                                                                                                                                         -> ParsingFunctions.e26 }
+                                                                                                                                                                    GHC.Types.True
+                                                                                                                                                                    -> BasicDerivatives.xToN
+                                                                                                                                                                         a }
                                                                                                                                                                GHC.Types.True
-                                                                                                                                                               -> BasicDerivatives.xToX }
+                                                                                                                                                               -> ParsingFunctions.e25 }
                                                                                                                                                           GHC.Types.True
-                                                                                                                                                          -> BasicDerivatives.tanh' }
+                                                                                                                                                          -> ParsingFunctions.e24 }
                                                                                                                                                      GHC.Types.True
-                                                                                                                                                     -> BasicDerivatives.tan' }
+                                                                                                                                                     -> ParsingFunctions.d15 }
                                                                                                                                                 GHC.Types.True
-                                                                                                                                                -> BasicDerivatives.sinh' }
+                                                                                                                                                -> ParsingFunctions.e23 }
                                                                                                                                            GHC.Types.True
-                                                                                                                                           -> BasicDerivatives.sin' }
+                                                                                                                                           -> ParsingFunctions.e22 }
                                                                                                                                       GHC.Types.True
-                                                                                                                                      -> BasicDerivatives.sech }
+                                                                                                                                      -> ParsingFunctions.e21 }
                                                                                                                                  GHC.Types.True
-                                                                                                                                 -> BasicDerivatives.sec }
+                                                                                                                                 -> BasicDerivatives.loga
+                                                                                                                                      a }
                                                                                                                             GHC.Types.True
-                                                                                                                            -> BasicDerivatives.log10 }
+                                                                                                                            -> ParsingFunctions.e20 }
                                                                                                                        GHC.Types.True
-                                                                                                                       -> BasicDerivatives.log' }
+                                                                                                                       -> ParsingFunctions.d20 }
                                                                                                                   GHC.Types.True
-                                                                                                                  -> BasicDerivatives.exp' }
+                                                                                                                  -> ParsingFunctions.e19 }
                                                                                                              GHC.Types.True
-                                                                                                             -> BasicDerivatives.csch }
+                                                                                                             -> ParsingFunctions.e18 }
                                                                                                         GHC.Types.True
-                                                                                                        -> BasicDerivatives.csc }
+                                                                                                        -> ParsingFunctions.e17 }
                                                                                                    GHC.Types.True
-                                                                                                   -> BasicDerivatives.coth }
+                                                                                                   -> ParsingFunctions.e16 }
                                                                                               GHC.Types.True
-                                                                                              -> BasicDerivatives.cot }
+                                                                                              -> ParsingFunctions.d25 }
                                                                                          GHC.Types.True
-                                                                                         -> BasicDerivatives.cosh' }
+                                                                                         -> ParsingFunctions.d24 }
                                                                                     GHC.Types.True
-                                                                                    -> BasicDerivatives.cos' }
+                                                                                    -> ParsingFunctions.e15 }
                                                                                GHC.Types.True
-                                                                               -> BasicDerivatives.atanh' }
+                                                                               -> ParsingFunctions.e14 }
                                                                           GHC.Types.True
-                                                                          -> BasicDerivatives.atan' }
+                                                                          -> ParsingFunctions.e13 }
                                                                      GHC.Types.True
-                                                                     -> BasicDerivatives.asinh' }
+                                                                     -> ParsingFunctions.e12 }
                                                                 GHC.Types.True
-                                                                -> BasicDerivatives.asin' }
-                                                           GHC.Types.True
-                                                           -> BasicDerivatives.asech }
-                                                      GHC.Types.True -> BasicDerivatives.asec }
-                                                 GHC.Types.True -> BasicDerivatives.acsch }
-                                            GHC.Types.True -> BasicDerivatives.acsc }
-                                       GHC.Types.True -> BasicDerivatives.acoth }
-                                  GHC.Types.True -> BasicDerivatives.acot }
-                             GHC.Types.True -> BasicDerivatives.acosh' }
-                        GHC.Types.True -> BasicDerivatives.acos' }
+                                                                -> ParsingFunctions.e11 }
+                                                           GHC.Types.True -> ParsingFunctions.e10 }
+                                                      GHC.Types.True -> ParsingFunctions.e9 }
+                                                 GHC.Types.True -> ParsingFunctions.e8 }
+                                            GHC.Types.True -> ParsingFunctions.e7 }
+                                       GHC.Types.True -> ParsingFunctions.e6 }
+                                  GHC.Types.True -> ParsingFunctions.e5 }
+                             GHC.Types.True -> ParsingFunctions.e4 }
+                        GHC.Types.True -> BasicDerivatives.aToX a }
                    GHC.Types.True
                    -> let {
-                        lvl3 :: GHC.Types.Double
+                        lvl4 :: GHC.Types.Double
                         = case Text.Read.readEither6
                                  @ GHC.Types.Double
                                  (Text.ParserCombinators.ReadP.run
@@ -570,16 +894,215 @@ ed10b9c3bf63fa3c98f2860dc1beca90
                             -> case ds of wild2 { [] -> x : ipv ipv1 -> ParsingFunctions.e1 } }
                       } in
                       let {
-                        lvl4 :: GHC.Base.Maybe GHC.Types.Double
-                        = GHC.Base.Just @ GHC.Types.Double lvl3
+                        lvl5 :: GHC.Base.Maybe GHC.Types.Double
+                        = GHC.Base.Just @ GHC.Types.Double lvl4
                       } in
-                      \ (ds :: GHC.Types.Double) -> lvl4 }) -}
+                      \ (ds :: GHC.Types.Double) -> lvl5 }) -}
 d00feb27cb9f974dd69040bfd8045405
   e1 :: GHC.Types.Double
   {- Strictness: x -}
+eff01c2f9cbe4447b8ac9626d89fe639
+  e10 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wasec ww1 }) -}
+d17b09850a54a5aa2a3d485f8eb407e5
+  e11 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wasech ww1 }) -}
+fc0cd3465b8d048e904c2fe91216e2a1
+  e12 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wasin' ww1 }) -}
+1d4372f1050944871911c05fea216c15
+  e13 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just
+                   @ GHC.Types.Double
+                   (GHC.Float.$fFloatingDouble_$casinh x)) -}
+3767daae3d7ba246ad770b76e30b9dc5
+  e14 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.atanDouble x)) -}
+a575c2deb328ae671771da3915bfa9ad
+  e15 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$watanh' ww1 }) -}
+b7dac77c43bb74ca1a860072e902ab7d
+  e16 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                (GHC.Prim.cosDouble# x1)
+                                (GHC.Prim.sinDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+eee6cbd9df89967d3d08949553ad5c29
+  e17 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinhDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                (GHC.Prim.coshDouble# x1)
+                                (GHC.Prim.sinhDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+3a896ae9a93d336b83c58ca28e78c54b
+  e18 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sinDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+46136d38ed347a0a36a7909cb902f3c6
+  e19 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.sinhDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.sinhDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
 1368d90b16f2c96ab4eeb2c6b5e8a187
   e2 :: GHC.Types.Double
   {- Strictness: x -}
+297ee0c1af8f5ee3442109d96d8447d7
+  e20 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim.logDouble# x1 of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 }) } }) -}
+4020e69a4db5de544a4abc5371e21da0
+  e21 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.cosDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.cosDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+0ac3e033dd6b750ad74170993026b9b0
+  e22 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.coshDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./##
+                                1.0##
+                                (GHC.Prim.coshDouble# x1) of wild2 { DEFAULT ->
+                         GHC.Types.D# wild2 })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+cfbcc61168cdd1f7ad238490ee9cd083
+  e23 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.sinDouble x)) -}
+8fa525487161c4b3775df09d4fedd253
+  e24 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## (GHC.Prim.cosDouble# x1) 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (GHC.Types.D# (GHC.Prim.tanDouble# x1))
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+dcb30f605110051b2f6746ac2c3e6948
+  e25 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 GHC.Base.Just @ GHC.Types.Double (GHC.Float.tanhDouble x)) -}
+150efbd9adbdfdbfdc7dcd4ad09128e3
+  e26 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>## x1 0.0##) of wild1 {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Double
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (GHC.Types.D# (GHC.Prim.**## x1 x1)) } }) -}
 dccfe1f887a948f9958aa0e779e7fa33
   e3 :: Text.ParserCombinators.ReadP.P GHC.Types.Double
   {- Unfolding: ((GHC.Read.$fReadDouble9
@@ -589,23 +1112,82 @@ dccfe1f887a948f9958aa0e779e7fa33
                  (Text.ParserCombinators.ReadP.N:ReadP[0] <GHC.Types.Double>_R)
                    @ GHC.Types.Double
                    (Text.Read.readEither5 @ GHC.Types.Double)) -}
-6463a7dd48ededd37d74ef23b655a709
+7972c9e6371e74897e37403c8933bbdf
+  e4 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wacos' ww1 }) -}
+c94b3fef4e2c1c90c34e6dae0a219090
+  e5 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wacosh' ww1 }) -}
+ecc71d5e28c4ac4a7f5d8bebd0055935
+  e6 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## x1 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./## 1.0## x1 of wild2 { DEFAULT ->
+                         GHC.Types.D# (GHC.Prim.atanDouble# wild2) })
+                   GHC.Types.True -> BasicDerivatives.acot1 } }) -}
+d00c38e9cb834843815dc0d20843ac2c
+  e7 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wacoth ww1 }) -}
+73283bfe8fb50d4f4bb0519b584bdbb9
+  e8 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: GHC.Types.Double) ->
+                 case w1 of ww { GHC.Types.D# ww1 ->
+                 BasicDerivatives.$wacsc ww1 }) -}
+c08f1ee3571596695976fb10c8051f47
+  e9 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Types.Double) ->
+                 case x of wild { GHC.Types.D# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## x1 0.0##) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Double
+                        (case GHC.Prim./## 1.0## x1 of wild2 { DEFAULT ->
+                         case GHC.Prim.logDouble#
+                                (GHC.Prim.+##
+                                   wild2
+                                   (GHC.Prim.sqrtDouble#
+                                      (GHC.Prim.+##
+                                         1.0##
+                                         (GHC.Prim.*## wild2 wild2)))) of wild3 { DEFAULT ->
+                         GHC.Types.D# wild3 } })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
+f330f2a6cc3963f43d95cc4fe7b61291
   isNumber :: [GHC.Types.Char] -> GHC.Types.Bool
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: (\ (ds :: [GHC.Types.Char]) ->
                  case ds of wild {
-                   [] -> ParsingFunctions.isNumber1
+                   [] -> ParsingFunctions.d60
                    : x xs
                    -> case x of wild1 { GHC.Types.C# x1 ->
                       case x1 of wild2 {
-                        DEFAULT -> ParsingFunctions.isNumber_isNumber' wild
-                        '-'# -> ParsingFunctions.isNumber_isNumber' xs } } }) -}
-e2ba2aa55bdafdcb39b1d762c77596d8
-  isNumber1 :: GHC.Types.Bool
-  {- Strictness: x -}
-98a4784b8a9a9224d1a9d7fd3977c30e
-  isNumber_isNumber' :: [GHC.Types.Char] -> GHC.Types.Bool
-  {- Arity: 1, Strictness: <S,1*U> -}
+                        DEFAULT -> ParsingFunctions.d_isNumber' wild
+                        '-'# -> ParsingFunctions.d_isNumber' xs } } }) -}
 dad23f4f5f08c1d81daa012f7a7f287c
   sign ::
     [GHC.Types.Char]

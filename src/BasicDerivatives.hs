@@ -1,6 +1,6 @@
 {-|
 Module      : BasicDerivatives
-Description : Module with math functions used in calculator
+Description : module with math functions used in calculator
 Copyright   : (c) Karol Bartyzel, 2017
 License     : GPL-3
 Maintainer  : karolbartyzel@interia.pl
@@ -11,16 +11,7 @@ Portability : POSIX
 module BasicDerivatives
 (
 
-{-
-  aToX,
-  loga,
-  xToN,
-
-  daToX,
-  dloga,
-  dxToN,
--}
-
+-- * Plain functions
   acos',
   acosh',
   acot,
@@ -33,6 +24,7 @@ module BasicDerivatives
   asinh',
   atan',
   atanh',
+  aToX,
   cos',
   cosh',
   cot,
@@ -41,14 +33,17 @@ module BasicDerivatives
   csch,
   exp',
   log',
-  log10,
+  loga,
   sec,
   sech,
   sin',
   sinh',
   tan',
   tanh',
+  xToN,
   xToX,
+
+  -- * Derivatives of functions
 
   dacos,
   dacosh,
@@ -62,23 +57,27 @@ module BasicDerivatives
   dasinh,
   datan,
   datanh,
+  daToX,
   dc,
   dcos,
   dcosh,
   dcot,
   dcoth,
+  dloga,
   dcsc,
   dcsch,
   dexp,
   dlog,
-  dlog10,
   dsec,
   dsech,
   dsin,
   dsinh,
   dtan,
   dtanh,
+  dxToN,
   dxToX,
+
+  -- *Opening Maybe functions
 
   takeMaybeTD,
   takeMaybePM
@@ -89,294 +88,280 @@ module BasicDerivatives
 
 --Deklaracje
 
-
--- |Function which
+-- |Math f(x) = acos(x)
+acos' :: Double -> Double -> Maybe Double
+-- |Math f(x) = acosh(x)
+acosh' :: Double -> Double -> Maybe Double
+-- |Math f(x) = acot(x)
+acot :: Double -> Double -> Maybe Double
+-- |Math f(x) = acoth(x)
+acoth :: Double -> Double -> Maybe Double
+-- |Math f(x) = acsc(x)
+acsc :: Double -> Double -> Maybe Double
+-- |Math f(x) = acsch(x)
+acsch :: Double -> Double -> Maybe Double
+-- |Math f(x) = asec(x)
+asec :: Double -> Double -> Maybe Double
+-- |Math f(x) = asech(x)
+asech :: Double -> Double -> Maybe Double
+-- |Math f(x) = asin(x)
+asin' :: Double -> Double -> Maybe Double
+-- |Math f(x) = asinh(x)
+asinh' :: Double -> Double -> Maybe Double
+-- |Math f(x) = atan(x)
+atan' :: Double -> Double -> Maybe Double
+-- |Math f(x) = atanh(x)
+atanh' :: Double -> Double -> Maybe Double
+-- |Math f(a,x) = a^x
 aToX :: Double -> Double -> Maybe Double
--- |Function which
+-- |Math f(x) = cos(x)
+cos' :: Double -> Double -> Maybe Double
+-- |Math f(x) = cosh(x)
+cosh' :: Double -> Double -> Maybe Double
+-- |Math f(x) = cot(x)
+cot :: Double -> Double -> Maybe Double
+-- |Math f(x) = coth(x)
+coth :: Double -> Double -> Maybe Double
+-- |Math f(x) = csc(x)
+csc :: Double -> Double -> Maybe Double
+-- |Math f(x) = csch(x)
+csch :: Double -> Double -> Maybe Double
+-- |Math f(x) = exp(x)
+exp' :: Double -> Double -> Maybe Double
+-- |Math f(x) = loge(x)
+log' :: Double -> Double -> Maybe Double
+-- |Math f(a,x) = loga(x)
 loga :: Double -> Double -> Maybe Double
--- |Function which
-xToN :: Double ->Double -> Maybe Double
+-- |Math f(x) = sec(x)
+sec :: Double -> Double -> Maybe Double
+-- |Math f(x) = sech(x)
+sech :: Double -> Double -> Maybe Double
+-- |Math f(x) = sin(x)
+sin' :: Double -> Double -> Maybe Double
+-- |Math f(x) = sinh(x)
+sinh' :: Double -> Double -> Maybe Double
+-- |Math f(x) = tan(x)
+tan' :: Double -> Double -> Maybe Double
+-- |Math f(x) = tanh(x)
+tanh' :: Double -> Double -> Maybe Double
+-- |Math f(n,x) = x^n
+xToN :: Double -> Double -> Maybe Double
+-- |Math f(x) = x^x
+xToX :: Double -> Double -> Maybe Double
 
--- |Function which
+-- |Math d(acos(x))/dx
+dacos :: Double -> Double -> Maybe Double
+-- |Math d(acosh(x))/dx
+dacosh :: Double -> Double -> Maybe Double
+-- |Math d(acot(x))/dx
+dacot :: Double -> Double -> Maybe Double
+-- |Math d(acoth(x))/dx
+dacoth :: Double -> Double -> Maybe Double
+-- |Math d(acsc(x))/dx
+dacsc :: Double -> Double -> Maybe Double
+-- |Math d(acsch(x))/dx
+dacsch :: Double -> Double -> Maybe Double
+-- |Math d(asec(x))/dx
+dasec :: Double -> Double -> Maybe Double
+-- |Math d(asech(x))/dx
+dasech :: Double -> Double -> Maybe Double
+-- |Math d(asin(x))/dx
+dasin :: Double -> Double -> Maybe Double
+-- |Math d(asinh(x))/dx
+dasinh :: Double -> Double -> Maybe Double
+-- |Math d(atan(x))/dx
+datan :: Double -> Double -> Maybe Double
+-- |Math d(atanh(x))/dx
+datanh :: Double -> Double -> Maybe Double
+-- |Math d(a^x(a,x))/dx
 daToX :: Double -> Double -> Maybe Double
--- |Function which
+-- |Math dc/dx
+dc :: Double -> Double -> Maybe Double
+-- |Math d(cos(x))/dx
+dcos :: Double -> Double -> Maybe Double
+-- |Math d(cosh(x))/dx
+dcosh :: Double -> Double -> Maybe Double
+-- |Math d(cot(x))/dx
+dcot :: Double -> Double -> Maybe Double
+-- |Math d(coth(x))/dx
+dcoth :: Double -> Double -> Maybe Double
+-- |Math d(csc(x))/dx
+dcsc :: Double -> Double -> Maybe Double
+-- |Math d(csch(x))/dx
+dcsch :: Double -> Double -> Maybe Double
+-- |Math d(exp(x))/dx
+dexp :: Double -> Double -> Maybe Double
+-- |Math d(loge(x))/dx
+dlog :: Double -> Double -> Maybe Double
+-- |Math d(loga(a,x))/dx
 dloga :: Double -> Double -> Maybe Double
--- |Function which
+-- |Math d(sec(x))/dx
+dsec :: Double -> Double -> Maybe Double
+-- |Math d(sech(x))/dx
+dsech :: Double -> Double -> Maybe Double
+-- |Math d(sin(x))/dx
+dsin :: Double -> Double -> Maybe Double
+-- |Math d(sinh(x))/dx
+dsinh :: Double -> Double -> Maybe Double
+-- |Math d(tan(x))/dx
+dtan :: Double -> Double -> Maybe Double
+-- |Math d(tanh(x))/dx
+dtanh :: Double -> Double -> Maybe Double
+-- |Math d(x^n(n,x))/dx
 dxToN :: Double -> Double -> Maybe Double
+-- |Math d(x^x(x))/dx
+dxToX :: Double -> Double -> Maybe Double
 
--- |Function which
-acos' :: Double -> Maybe Double
--- |Function which
-acosh' :: Double -> Maybe Double
--- |Function which
-acot :: Double -> Maybe Double
--- |Function which
-acoth :: Double -> Maybe Double
--- |Function which
-acsc :: Double -> Maybe Double
--- |Function which
-acsch :: Double -> Maybe Double
--- |Function which
-asec :: Double -> Maybe Double
--- |Function which
-asech :: Double -> Maybe Double
--- |Function which
-asin' :: Double -> Maybe Double
--- |Function which
-asinh' :: Double -> Maybe Double
--- |Function which
-atan' :: Double -> Maybe Double
--- |Function which
-atanh' :: Double -> Maybe Double
--- |Function which
-cos' :: Double -> Maybe Double
--- |Function which
-cosh' :: Double -> Maybe Double
--- |Function which
-cot :: Double -> Maybe Double
--- |Function which
-coth :: Double -> Maybe Double
--- |Function which
-csc :: Double -> Maybe Double
--- |Function which
-csch :: Double -> Maybe Double
--- |Function which
-exp' :: Double -> Maybe Double
--- |Function which
-log' :: Double -> Maybe Double
--- |Function which
-log10 :: Double -> Maybe Double
--- |Function which
-sec :: Double -> Maybe Double
--- |Function which
-sech :: Double -> Maybe Double
--- |Function which
-sin' :: Double -> Maybe Double
--- |Function which
-sinh' :: Double -> Maybe Double
--- |Function which
-tan' :: Double -> Maybe Double
--- |Function which
-tanh' :: Double -> Maybe Double
--- |Function which
-xToX :: Double -> Maybe Double
-
--- |Function which
-dacos :: Double -> Maybe Double
--- |Function which
-dacosh :: Double -> Maybe Double
--- |Function which
-dacot :: Double -> Maybe Double
--- |Function which
-dacoth :: Double -> Maybe Double
--- |Function which
-dacsc :: Double -> Maybe Double
--- |Function which
-dacsch :: Double -> Maybe Double
--- |Function which
-dasec :: Double -> Maybe Double
--- |Function which
-dasech :: Double -> Maybe Double
--- |Function which
-dasin :: Double -> Maybe Double
--- |Function which
-dasinh :: Double -> Maybe Double
--- |Function which
-datan :: Double -> Maybe Double
--- |Function which
-datanh :: Double -> Maybe Double
-
--- |Function which
-dc :: Double -> Maybe Double
--- |Function which
-dcos :: Double -> Maybe Double
--- |Function which
-dcosh :: Double -> Maybe Double
--- |Function which
-dcot :: Double -> Maybe Double
--- |Function which
-dcoth :: Double -> Maybe Double
--- |Function which
-dcsc :: Double -> Maybe Double
--- |Function which
-dcsch :: Double -> Maybe Double
--- |Function which
-dexp :: Double -> Maybe Double
--- |Function which
-dlog :: Double -> Maybe Double
--- |Function which
-dlog10 :: Double -> Maybe Double
--- |Function which
-dsec :: Double -> Maybe Double
--- |Function which
-dsech :: Double -> Maybe Double
--- |Function which
-dsin :: Double -> Maybe Double
--- |Function which
-dsinh :: Double -> Maybe Double
--- |Function which
-dtan :: Double -> Maybe Double
--- |Function which
-dtanh :: Double -> Maybe Double
--- |Function which
-dxToX :: Double -> Maybe Double
-
--- |Function which
+-- |Function which open Maybe monad, when we time or divide
 takeMaybeTD :: Maybe Double -> Double --Time/Divide
--- |Function which
+-- |Function which open Maybe monad, when we plus or minus
 takeMaybePM :: Maybe Double -> Double --Plus/Minus
+
+
 
 --Definicje
 
-
-
+acos' _ x
+  |abs (x) < 1 = Just (acos x) -- <=
+  |otherwise = Nothing
+acosh' _ x
+  |abs(x) > 1 = Just (acosh x)
+  |otherwise = Nothing
+acot _ x
+  |x /= 0 = Just (atan $ 1/x)
+  |otherwise = Just (pi/2)
+acoth _ x
+  |abs(x) > 1 = Just (atanh $ 1/x)
+  |otherwise = Nothing
+acsc _ x
+  |abs(x) > 1 = Just (asin $ 1/x)
+  |otherwise = Nothing
+acsch _ x
+  |x /= 0 = Just (asinh $ 1/x)
+  |otherwise = Nothing
+asec _ x
+  |abs(x) > 1 = Just (acos $ 1/x)
+  |otherwise = Nothing
+asech _ x
+  |x /= 0 && abs(x) < 1 = Just (acosh $ 1/x)
+  |otherwise = Nothing
+asin' _ x
+  |abs (x) < 1 = Just (asin x) -- <=
+  |otherwise = Nothing
+asinh' _ x = Just (asinh x)
+atan' _ x = Just (atan x)
+atanh' _ x
+  |abs(x) < 1 = Just (atanh x)
+  |otherwise = Nothing
 aToX a x
   |a>0 && a/= 1 = Just (a ** x)
+  |otherwise = Nothing
+cos' _ x = Just (cos x)
+cosh' _ x = Just (cosh x)
+cot _ x
+  |sin x /= 0 = Just ((cos x)/(sin x))
+  |otherwise = Nothing
+coth _ x
+  |sinh x /= 0 = Just ((cosh x)/(sinh x))
+  |otherwise = Nothing
+csc _ x
+  |sin x /= 0 = Just (1/(sin x))
+  |otherwise = Nothing
+csch _ x
+  |sinh x /= 0 = Just (1/(sinh x))
+  |otherwise = Nothing
+exp' _ x = Just (exp x)
+log' _ x
+  |x>0 = Just (log x)
   |otherwise = Nothing
 loga a x
   |a>0 && a/=1 && x>0 = Just (logBase a x)
   |otherwise = Nothing
-xToN x n = Just (x ** n)
-
-daToX a x
-  |a>0 && a/= 1 = Just (a**x * (log a))
-dloga a x
-  |a <= 0 || a == 1 || x <= 0 = Nothing
-  |otherwise = Just (1/(x*(log a)))
-dxToN n x = Just (n* x**(n-1))
-
-acos' x
-  |abs (x) < 1 = Just (acos x) -- <=
-  |otherwise = Nothing
-acosh' x
-  |abs(x) > 1 = Just (acosh x)
-  |otherwise = Nothing
-acot x
-  |x /= 0 = Just (atan $ 1/x)
-  |otherwise = Just (pi/2)
-acoth x
-  |abs(x) > 1 = Just (atanh $ 1/x)
-  |otherwise = Nothing
-acsc x
-  |abs(x) > 1 = Just (asin $ 1/x)
-  |otherwise = Nothing
-acsch x
-  |x /= 0 = Just (asinh $ 1/x)
-  |otherwise = Nothing
-asec x
-  |abs(x) > 1 = Just (acos $ 1/x)
-  |otherwise = Nothing
-asech x
-  |x /= 0 && abs(x) < 1 = Just (acosh $ 1/x)
-  |otherwise = Nothing
-asin' x
-  |abs (x) < 1 = Just (asin x) -- <=
-  |otherwise = Nothing
-asinh' x = Just (asinh x)
-atan' x = Just (atan x)
-atanh' x
-  |abs(x) < 1 = Just (atanh x)
-  |otherwise = Nothing
-cos' x = Just (cos x)
-cosh' x = Just (cosh x)
-cot x
-  |sin x /= 0 = Just ((cos x)/(sin x))
-  |otherwise = Nothing
-coth x
-  |sinh x /= 0 = Just ((cosh x)/(sinh x))
-  |otherwise = Nothing
-csc x
-  |sin x /= 0 = Just (1/(sin x))
-  |otherwise = Nothing
-csch x
-  |sinh x /= 0 = Just (1/(sinh x))
-  |otherwise = Nothing
-exp' x = Just (exp x)
-log' x
-  |x>0 = Just (log x)
-  |otherwise = Nothing
-log10 x
-  |x>0 = Just (logBase 10 x)
-  |otherwise = Nothing
-sec x
+sec _ x
   |cos x /= 0 = Just (1/(cos x))
   |otherwise = Nothing
-sech x
+sech _ x
   |cosh x /= 0 = Just (1/(cosh x))
   |otherwise = Nothing
-sin' x = Just (sin x)
-sinh' x = Just (sinh x)
-tan' x
+sin' _ x = Just (sin x)
+sinh' _ x = Just (sinh x)
+tan' _ x
   |cos x /= 0 = Just (tan x)
   |otherwise = Nothing
-tanh' x = Just (tanh x)
-xToX x
+tanh' _ x = Just (tanh x)
+xToN n x = Just (x ** n)
+xToX _ x
   |x > 0 = Just (x ** x)
   |otherwise = Nothing
 
-dacos x
+dacos _ x
   |abs(x) < 1 = Just (-1/sqrt(1-x^2))
   |otherwise = Nothing
-dacosh x
+dacosh _ x
   |abs(x) > 1 = Just (1/sqrt(x^2-1))
   |otherwise = Nothing
-dacot x = Just (-1/(1+x^2))
-dacoth x
+dacot _ x = Just (-1/(1+x^2))
+dacoth _ x
   |abs(x) > 1 = Just (-1/(x^2-1))
   |otherwise = Nothing
-dacsc x
+dacsc _ x
   |abs(x) > 1 = Just (-1/(x*sqrt(x^2-1)))
   |otherwise = Nothing
-dacsch x
+dacsch _ x
   |x /= 0 = Just (-1/(x*sqrt(1+x^2)))
   |otherwise = Nothing
-dasec x
+dasec _ x
   |abs(x) > 1 = Just (1/(x*sqrt(x^2-1)))
   |otherwise = Nothing
-dasech x
+dasech _ x
   |x /= 0 && abs(x)<1 = Just (-1/(x*sqrt(1-x^2)))
   |otherwise = Nothing
-dasin x
+dasin _ x
   |abs(x) < 1 = Just (1/sqrt(1-x^2))
   |otherwise = Nothing
-dasinh x = Just (1/sqrt(1+x^2))
-datan x = Just (1/(1+x^2))
-datanh x
+dasinh _ x = Just (1/sqrt(1+x^2))
+datan _ x = Just (1/(1+x^2))
+datanh _ x
   |abs(x) < 1 = Just (1/(1-x^2))
   |otherwise = Nothing
-dc c = Just 0
-dcos x = Just (-(sin x))
-dcosh x = Just (sinh x)
-dcot x
-  |sin x /= 0 = Just (-(takeMaybePM (csc x))^2)
+daToX a x
+  |a>0 && a/= 1 = Just (a**x * (log a))
+dc _ _ = Just 0
+dcos _ x = Just (-(sin x))
+dcosh _ x = Just (sinh x)
+dcot _ x
+  |sin x /= 0 = Just (-(takeMaybePM (csc 0 x))^2)
   |otherwise = Nothing
-dcoth x
-  |sinh x /= 0 = Just (-(takeMaybePM (csch x))^2)
+dcoth _ x
+  |sinh x /= 0 = Just (-(takeMaybePM (csch 0 x))^2)
   |otherwise = Nothing
-dcsc x
+dcsc _ x
   |sin x /= 0 = Just (-(cos x)/(sin x)^2)
   |otherwise = Nothing
-dcsch x
-  |sinh x /= 0 = Just (-(takeMaybePM (csch x))*(takeMaybePM (coth x)))
+dcsch _ x
+  |sinh x /= 0 = Just (-(takeMaybePM (csch 0 x))*(takeMaybePM (coth 0 x)))
   |otherwise = Nothing
-dexp x = Just (exp x)
-dlog x
+dexp _ x = Just (exp x)
+dlog _ x
   |x > 0 = Just (1/x)
   |otherwise = Nothing
-dlog10 x = dloga 10 x
-dsec x
+dloga a x
+  |a <= 0 || a == 1 || x <= 0 = Nothing
+  |otherwise = Just (1/(x*(log a)))
+dsec _ x
   |cos x /= 0 = Just ((sin x)/(cos x)^2)
   |otherwise = Nothing
-dsech x
-  |cosh x /= 0 = Just (-(takeMaybePM (sech x))*(tanh x))
+dsech _ x
+  |cosh x /= 0 = Just (-(takeMaybePM (sech 0 x))*(tanh x))
   |otherwise = Nothing
-dsin x = Just (cos x)
-dsinh x = Just (cosh x)
-dtan x
-  |cos x /= 0 = Just ((takeMaybePM (sec x))^2)
+dsin _ x = Just (cos x)
+dsinh _ x = Just (cosh x)
+dtan _ x
+  |cos x /= 0 = Just ((takeMaybePM (sec 0 x))^2)
   |otherwise = Nothing
-dtanh x = Just ((takeMaybePM (sech x))^2)
-dxToX x
+dtanh _ x = Just ((takeMaybePM (sech 0 x))^2)
+dxToN n x = Just (n* x**(n-1))
+dxToX _ x
   |x > 0 = Just (x**x * (1+log x))
   |otherwise = Nothing
 

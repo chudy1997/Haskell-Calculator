@@ -1,6 +1,6 @@
 {-|
 Module      : ParsingFunctions
-Description : Module with functions parsing math functions names
+Description : module with functions parsing math functions names
 Copyright   : (c) Karol Bartyzel, 2017
 License     : GPL-3
 Maintainer  : karolbartyzel@interia.pl
@@ -11,9 +11,9 @@ Portability : POSIX
 module ParsingFunctions
 (
 
+-- *Parsing functions 
   d,
   e,
-  isNumber,
   sign
 
 ) where
@@ -21,91 +21,88 @@ module ParsingFunctions
 import BasicDerivatives
 import Data.Char (isDigit)
 
--- |Function which
-d :: [Char] -> (Double -> Maybe Double)
--- |Function which
-e :: [Char] -> (Double -> Maybe Double)
--- |Function which
-isNumber :: [Char] -> Bool
--- |Function which 
+-- * Export functions
+
+-- |Function which takes name of function (eventually additional number) and returns it's derivative
+d :: [Char] -> Double -> (Double -> Maybe Double)
+-- |Function which takes name of function (eventually additional number) and returns function itself
+e :: [Char] -> Double -> (Double -> Maybe Double)
+-- |Function which checks math signs
 sign :: [Char] -> (Double -> Double -> Double)
 
-d f =
- if isNumber f then dc
+-- * Internal functions
 
+-- |Function which checks if string is a number
+isNumber :: [Char] -> Bool
+
+d f a =
+ if isNumber f then dc 0
  else case f of
-
- --"loga" -> loga
- --"xToN" -> xToN
- --"aToX" -> aToX
-
-   "acos" -> dacos
-   "acosh" -> dacosh
-   "acot" -> dacot
-   "acoth" -> dacoth
-   "acsc" -> dacsc
-   "acsch" -> dacsch
-   "asec" -> dasec
-   "asech" -> dasech
-   "asin" -> dasin
-   "asinh" -> dasinh
-   "atan" -> datan
-   "atanh" -> datanh
-   "cos" -> dcos
-   "cosh" -> dcosh
-   "cot" -> dcot
-   "coth" -> dcoth
-   "csc" -> dcsc
-   "csch" -> dcsch
-   "exp" -> dexp
-   "log" -> dlog
-   "log10" -> dlog10
-   "sec" -> dsec
-   "sech" -> dsech
-   "sin" -> dsin
-   "sinh" -> dsinh
-   "tan" -> dtan
-   "tanh" -> dtanh
-   "xToX" -> dxToX
+   "acos" -> dacos 0
+   "acosh" -> dacosh 0
+   "acot" -> dacot 0
+   "acoth" -> dacoth 0
+   "acsc" -> dacsc 0
+   "acsch" -> dacsch 0
+   "asec" -> dasec 0
+   "asech" -> dasech 0
+   "asin" -> dasin 0
+   "asinh" -> dasinh 0
+   "atan" -> datan 0
+   "atanh" -> datanh 0
+   "aToX" -> daToX a
+   "cos" -> dcos 0
+   "cosh" -> dcosh 0
+   "cot" -> dcot 0
+   "coth" -> dcoth 0
+   "csc" -> dcsc 0
+   "csch" -> dcsch 0
+   "exp" -> dexp 0
+   "log" -> dlog 0
+   "loga" -> dloga a
+   "sec" -> dsec 0
+   "sech" -> dsech 0
+   "sin" -> dsin 0
+   "sinh" -> dsinh 0
+   "tan" -> dtan 0
+   "tanh" -> dtanh 0
+   "xToN" -> dxToN a
+   "xToX" -> dxToX 0
    _ -> (\e -> Nothing)
 
-e f =
+e f a =
  if isNumber f then (\_ -> Just $ read f)
-
  else case f of
-
---"loga" -> loga
---"xToN" -> xToN
---"aToX" -> aToX
-
-   "acos" -> acos'
-   "acosh" -> acosh'
-   "acot" -> acot
-   "acoth" -> acoth
-   "acsc" -> acsc
-   "acsch" -> acsch
-   "asec" -> asec
-   "asech" -> asech
-   "asin" -> asin'
-   "asinh" -> asinh'
-   "atan" -> atan'
-   "atanh" -> atanh'
-   "cos" -> cos'
-   "cosh" -> cosh'
-   "cot" -> cot
-   "coth" -> coth
-   "csc" -> csc
-   "csch" -> csch
-   "exp" -> exp'
-   "log" -> log'
-   "log10" -> log10
-   "sec" -> sec
-   "sech" -> sech
-   "sin" -> sin'
-   "sinh" -> sinh'
-   "tan" -> tan'
-   "tanh" -> tanh'
-   "xToX" -> xToX
+   "acos" -> acos' 0
+   "acosh" -> acosh' 0
+   "acot" -> acot 0
+   "acoth" -> acoth 0
+   "acsc" -> acsc 0
+   "acsch" -> acsch 0
+   "asec" -> asec 0
+   "asech" -> asech 0
+   "asin" -> asin' 0
+   "asinh" -> asinh' 0
+   "atan" -> atan' 0
+   "atanh" -> atanh' 0
+   "aToX" -> aToX a
+   "cos" -> cos' 0
+   "cosh" -> cosh' 0
+   "cot" -> cot 0
+   "coth" -> coth 0
+   "csc" -> csc 0
+   "csch" -> csch 0
+   "exp" -> exp' 0
+   "log" -> log' 0
+   "loga" -> loga a
+   "sec" -> sec 0
+   "sech" -> sech 0
+   "sin" -> sin' 0
+   "sinh" -> sinh' 0
+   "tan" -> tan' 0
+   "tanh" -> tanh' 0
+   "xToN" -> xToN a
+   "xToX" -> xToX 0
    _ -> (\e ->Nothing)
 
 isNumber (x:xs) = if x=='-' then isNumber' xs else isNumber' (x:xs)
