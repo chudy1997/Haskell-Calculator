@@ -11,9 +11,10 @@ Portability : POSIX
 module ParsingFunctions
 (
 
--- *Parsing functions 
+-- *Parsing functions
   d,
   e,
+  isNumber,
   sign
 
 ) where
@@ -21,19 +22,14 @@ module ParsingFunctions
 import BasicDerivatives
 import Data.Char (isDigit)
 
--- * Export functions
-
 -- |Function which takes name of function (eventually additional number) and returns it's derivative
 d :: [Char] -> Double -> (Double -> Maybe Double)
 -- |Function which takes name of function (eventually additional number) and returns function itself
 e :: [Char] -> Double -> (Double -> Maybe Double)
--- |Function which checks math signs
-sign :: [Char] -> (Double -> Double -> Double)
-
--- * Internal functions
-
 -- |Function which checks if string is a number
 isNumber :: [Char] -> Bool
+-- |Function which checks math signs
+sign :: [Char] -> (Double -> Double -> Double)
 
 d f a =
  if isNumber f then dc 0

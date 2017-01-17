@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-16 09:49:50.454433 UTC
+2017-01-17 00:19:36.9029 UTC
 
 interface calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:ParsingFunctions 8001
-  interface hash: fd10cc046ba1b2220242f140dfcb6594
-  ABI hash: 7fb2ea04734e1604d05b883c05562592
-  export-list hash: 77e7f6acdda0227377e66ad99767ce2c
+  interface hash: bf70b5564e1be4df7cac9777435dda98
+  ABI hash: 1ec712e8bae8962e11ba56cfadd7522b
+  export-list hash: 041aabb93aec91404f895c0b1ae6e7f9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
   sig of: Nothing
@@ -14,6 +14,7 @@ interface calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:ParsingFunctions 8001
 exports:
   ParsingFunctions.d
   ParsingFunctions.e
+  ParsingFunctions.isNumber
   ParsingFunctions.sign
 module dependencies: BasicDerivatives
 package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
@@ -148,7 +149,7 @@ a2ec300c59a1020faad8efbc2da0b7d5
                              -> case w1 of wild3 { GHC.Types.D# x ->
                                 case w2 of wild4 { GHC.Types.D# y -> GHC.Prim./## x y } }
                              : ipv ipv1 -> 0.0## } } } }) -}
-226849a9698fabb5c49e771ba9ce6745
+01fb60fa5bd4cbdfe2043dfbc33aa47d
   d ::
     [GHC.Types.Char]
     -> GHC.Types.Double
@@ -663,9 +664,6 @@ aa589e9b59e5708dc6f3c2758556142a
                 (\ (w1 :: GHC.Types.Double) ->
                  case w1 of ww { GHC.Types.D# ww1 ->
                  BasicDerivatives.$wdacsc ww1 }) -}
-e8b34e572b1bbd57b1585a47131d6d15
-  d60 :: GHC.Types.Bool
-  {- Strictness: x -}
 fb2e832a82f1e487e9a900e0c3b9cdb4
   d7 :: GHC.Types.Double -> GHC.Base.Maybe GHC.Types.Double
   {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
@@ -702,10 +700,7 @@ a4672cea3abe4224fbc36bb1d400b7a9
                 (\ (w1 :: GHC.Types.Double) ->
                  case w1 of ww { GHC.Types.D# ww1 ->
                  BasicDerivatives.$wdasech ww1 }) -}
-dd22028f0e37fbd3ec26d3fded330247
-  d_isNumber' :: [GHC.Types.Char] -> GHC.Types.Bool
-  {- Arity: 1, Strictness: <S,1*U> -}
-a6ca4b0ec3e40143058856b3945fbe58
+10a6c1c93c230b0e5ea4424c787ce7ae
   e ::
     [GHC.Types.Char]
     -> GHC.Types.Double
@@ -1177,17 +1172,23 @@ c08f1ee3571596695976fb10c8051f47
                                          (GHC.Prim.*## wild2 wild2)))) of wild3 { DEFAULT ->
                          GHC.Types.D# wild3 } })
                    GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Double } }) -}
-f330f2a6cc3963f43d95cc4fe7b61291
+6463a7dd48ededd37d74ef23b655a709
   isNumber :: [GHC.Types.Char] -> GHC.Types.Bool
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: (\ (ds :: [GHC.Types.Char]) ->
                  case ds of wild {
-                   [] -> ParsingFunctions.d60
+                   [] -> ParsingFunctions.isNumber1
                    : x xs
                    -> case x of wild1 { GHC.Types.C# x1 ->
                       case x1 of wild2 {
-                        DEFAULT -> ParsingFunctions.d_isNumber' wild
-                        '-'# -> ParsingFunctions.d_isNumber' xs } } }) -}
+                        DEFAULT -> ParsingFunctions.isNumber_isNumber' wild
+                        '-'# -> ParsingFunctions.isNumber_isNumber' xs } } }) -}
+e2ba2aa55bdafdcb39b1d762c77596d8
+  isNumber1 :: GHC.Types.Bool
+  {- Strictness: x -}
+98a4784b8a9a9224d1a9d7fd3977c30e
+  isNumber_isNumber' :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U> -}
 dad23f4f5f08c1d81daa012f7a7f287c
   sign ::
     [GHC.Types.Char]

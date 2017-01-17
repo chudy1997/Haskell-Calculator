@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-16 09:49:54.430058 UTC
+2017-01-17 00:59:44.475297 UTC
 
 interface calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:Calculator 8001
-  interface hash: 3287e0d3bfffed75ef4ddd18eac4c8ed
+  interface hash: 661054518d0c8f0b531372857ff7368b
   ABI hash: 026e5a5687a9ef29e196b9c9ac4c2ba7
   export-list hash: a635dea9c323851add6c07371a1ef102
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -35,10 +35,10 @@ import  -/  BasicDerivatives 857a0917d6805129d904585615d5649b
   exports: 0f7b8b43f56912e4241cd2bfb4002737
   takeMaybePM 4378277357bcdf8b8fa52f4693fc69cb
   takeMaybeTD 29013c59a7deef276782cbcc0e3bbe0c
-import  -/  ParsingFunctions 7fb2ea04734e1604d05b883c05562592
-  exports: 77e7f6acdda0227377e66ad99767ce2c
-  d 226849a9698fabb5c49e771ba9ce6745
-  e a6ca4b0ec3e40143058856b3945fbe58
+import  -/  ParsingFunctions 1ec712e8bae8962e11ba56cfadd7522b
+  exports: 041aabb93aec91404f895c0b1ae6e7f9
+  d 01fb60fa5bd4cbdfe2043dfbc33aa47d
+  e 10a6c1c93c230b0e5ea4424c787ce7ae
   sign dad23f4f5f08c1d81daa012f7a7f287c
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 0b491ed5c3df0dec391d8aeecf80951e

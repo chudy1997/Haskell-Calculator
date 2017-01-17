@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-16 10:00:29.043469 UTC
+2017-01-17 16:34:56.088465 UTC
 
 interface main@main:Main 8001
-  interface hash: 2a9d18e1cedcc5dff0e48070f1fd6e18
-  ABI hash: 10deb5155f39136e99743e502560aed9
-  export-list hash: f6490a97a3f3e9fb4cf58c7912c1c997
+  interface hash: fbe08bcb121d2c85d6ffa906f871875b
+  ABI hash: 4ecac7a51fbba4add67e8ecd3158cf08
+  export-list hash: 8991414293731a823802f78ab59b462d
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 18b858d0992bfae270bd958d12494f11
   sig of: Nothing
@@ -13,7 +13,14 @@ interface main@main:Main 8001
   where
 exports:
   Main.main
-  Main.programMain
+  Main.parseArgumentsName
+  Main.parseFunctionsNames
+  Main.parseNumberFive
+  Main.parseNumberFour
+  Main.parseNumberOne
+  Main.parseNumberThree
+  Main.parseNumberTwo
+  Main.parseNumberZero
 module dependencies:
 package dependencies: base-4.9.0.0*
                       calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ
@@ -27,11 +34,12 @@ family instance modules: base-4.9.0.0:Control.Applicative
 import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
 import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
 import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
 import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
 import  -/  base-4.9.0.0:System.IO eb1d40aa793a4047069a5023f2ebcfe3
 import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:BasicDerivatives 857a0917d6805129d904585615d5649b
 import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:Calculator 026e5a5687a9ef29e196b9c9ac4c2ba7
-import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:ParsingFunctions 7fb2ea04734e1604d05b883c05562592
+import  -/  calculator-0.1.0.0@calculator-0.1.0.0-8Tet1wOxGuGSNWb8A2YaZ:ParsingFunctions 1ec712e8bae8962e11ba56cfadd7522b
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
 d6831ef04cb9301b090dfae6f7bb7ec7
@@ -46,12 +54,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-5436a27a98d0341527303d4978e47ee6
+8d632b87383224463b2554fb1f7169ef
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-e67e6f4067a082a6a8432d82c1d8e61e
+92d2ca0ef4201d48563cec516eea3fb4
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -59,17 +67,59 @@ e67e6f4067a082a6a8432d82c1d8e61e
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main3
+                        Main.main19
                         GHC.Types.False
                         s of ds1 { (#,#) ipv ipv1 ->
                  Main.main2 ipv }) -}
-ee6c40491fc3d7de79463334122afe56
-  main2 ::
+24b6877ce7be986072faf66e05a59ee8
+  main10 :: [GHC.Types.Char] -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (x :: [GHC.Types.Char]) (ds :: [GHC.Types.Char])[OneShot] ->
+                 x) -}
+01294948d13976400dc3891d6fd4250c
+  main11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U> -}
-281a90849b2384a49c86081b70e0710e
-  main3 :: [GHC.Types.Char]
+a4a9b12e2a506d85b2d5ffcc4e4934e6
+  main12 ::
+    [GHC.Types.Char]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+ed23e1150c1226619f71d7f5b22893dc
+  main13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ":Q"#) -}
+8ae996647db8ba50699558e1517d7ec6
+  main14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ":q"#) -}
+232d961f5c2c667c8639fdb9e0b946ad
+  main15 ::
+    GHC.Base.String
+    -> (GHC.Base.String -> GHC.Base.String)
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ (ds :: GHC.Base.String)
+                   (ds1 :: GHC.Base.String -> GHC.Base.String)[OneShot]
+                   (tpl :: GHC.Base.String)[OneShot] ->
+                 ds1 ds) -}
+63e8d7ff49fd068a3343614525cf49bd
+  main16 ::
+    [GHC.Types.Char]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+fe44886cb2c2b47f2aa4e0558a24ce69
+  main17 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
+39717f4916421a7d6bf80729f6a0ec2b
+  main18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Enter your function to differentiation and press enter:"#) -}
+a3fc0782349a2c3967877d8885523e85
+  main19 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "\n\
                    \Calculator of derivatives\n\
@@ -79,19 +129,200 @@ ee6c40491fc3d7de79463334122afe56
                    \2. You can only use one operation!\n\
                    \3. Follow the instructions precisely\n\
                    \\n"#) -}
-64ffea5fae764515f2391e3169946481
-  main4 ::
+966e1f3fb737a3922c69707d0a09525f
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main18
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Internals.wantReadableHandle_1
+                        @ GHC.Base.String
+                        GHC.IO.Handle.Text.hGetLine4
+                        GHC.IO.Handle.FD.stdin
+                        GHC.IO.Handle.Text.hGetLine2
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle__>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case Data.OldList.wordsFB
+                        @ (GHC.Types.Int -> GHC.Types.Int)
+                        (GHC.List.lengthFB @ [GHC.Types.Char])
+                        (GHC.Base.id @ GHC.Types.Int)
+                        ipv3
+                        Main.main17 of wild { GHC.Types.I# ds ->
+                 case ds of ds3 {
+                   DEFAULT -> Main.main11 ipv2
+                   1# -> Main.main16 ipv3 ipv2
+                   2# -> Main.main6 ipv3 ipv2
+                   3# -> Main.main5 ipv3 ipv2
+                   4# -> Main.main4 ipv3 ipv2
+                   5# -> Main.main3 ipv3 ipv2 } } } }) -}
+1d6a8e610548fe1751ccad31c5e540b0
+  main20 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-257a737671036d0fcdaedbd8441867f8
-  programMain :: GHC.Types.IO ()
+e023366c4b31f041e4367cad4ed6d177
+  main3 ::
+    [GHC.Types.Char]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+62a34ee4216d39793d8aadf557517ebd
+  main4 ::
+    [GHC.Types.Char]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+5f90d13d45cbb627cd2993abfc855e24
+  main5 ::
+    [GHC.Types.Char]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+210d2724cda3164db5d2c65028a05ce4
+  main6 ::
+    [GHC.Types.Char]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (functions :: [GHC.Types.Char])
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   $j :: GHC.Prim.Void#
+                         -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                     {- Arity: 1, Strictness: <L,A> -}
+                   = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                     case Data.OldList.wordsFB
+                            @ (GHC.Base.String -> GHC.Base.String)
+                            Main.main15
+                            (GHC.Base.id @ GHC.Base.String)
+                            functions
+                            (GHC.List.lastError @ GHC.Base.String) of wild {
+                       []
+                       -> case ParsingFunctions.isNumber1
+                          ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                          of {}
+                       : x xs
+                       -> case x of wild1 { GHC.Types.C# x1 ->
+                          let {
+                            $j1 :: GHC.Prim.Void#
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                              {- Arity: 1, Strictness: <L,A> -}
+                            = \ (w1 :: GHC.Prim.Void#)[OneShot] ->
+                              case GHC.Base.eqString functions Main.main14 of wild2 {
+                                GHC.Types.False
+                                -> case GHC.Base.eqString functions Main.main13 of wild3 {
+                                     GHC.Types.False -> Main.main12 functions eta
+                                     GHC.Types.True -> (# eta, GHC.Tuple.() #) }
+                                GHC.Types.True -> (# eta, GHC.Tuple.() #) }
+                          } in
+                          case x1 of wild2 {
+                            DEFAULT
+                            -> case ParsingFunctions.isNumber_isNumber' wild of wild4 {
+                                 GHC.Types.False -> Main.main11 eta
+                                 GHC.Types.True -> $j1 GHC.Prim.void# }
+                            '-'#
+                            -> case ParsingFunctions.isNumber_isNumber' xs of wild4 {
+                                 GHC.Types.False -> Main.main11 eta
+                                 GHC.Types.True -> $j1 GHC.Prim.void# } } } }
+                 } in
+                 case GHC.Classes.$fEq[]_$s$c==1
+                        (Data.OldList.wordsFB
+                           @ [GHC.Types.Char]
+                           Main.main10
+                           (GHC.List.badHead @ [GHC.Types.Char])
+                           functions)
+                        Main.main9 of wild {
+                   GHC.Types.False
+                   -> case GHC.Classes.$fEq[]_$s$c==1
+                             (Data.OldList.wordsFB
+                                @ [GHC.Types.Char]
+                                Main.main10
+                                (GHC.List.badHead @ [GHC.Types.Char])
+                                functions)
+                             Main.main8 of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Classes.$fEq[]_$s$c==1
+                                  (Data.OldList.wordsFB
+                                     @ [GHC.Types.Char]
+                                     Main.main10
+                                     (GHC.List.badHead @ [GHC.Types.Char])
+                                     functions)
+                                  Main.main7 of wild2 {
+                             GHC.Types.False -> Main.main11 eta
+                             GHC.Types.True -> $j GHC.Prim.void# }
+                        GHC.Types.True -> $j GHC.Prim.void# }
+                   GHC.Types.True -> $j GHC.Prim.void# }) -}
+f6517fb82cf50b4702b8d16917d28155
+  main7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "xToN"#) -}
+eaf3a338ee636a2f170ed5ae6660c99a
+  main8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "loga"#) -}
+790e1ccc1d69ad2c9316c67f241372f3
+  main9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "aToX"#) -}
+001349ade0d349965a3e12f2bb5dd73a
+  parseArgumentsName :: [GHC.Types.Char] -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main12
+                  `cast`
+                (<[GHC.Types.Char]>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+6a6fe0c5bf3a2fa8fede43b417253dd5
+  parseFunctionsNames :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main2 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+081b900e0f2630ba9912597d47dd86c1
+  parseNumberFive :: [GHC.Types.Char] -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main3
+                  `cast`
+                (<[GHC.Types.Char]>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+5068de5d3f2ac3b8bfcbdccc65419a3b
+  parseNumberFour :: [GHC.Types.Char] -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main4
+                  `cast`
+                (<[GHC.Types.Char]>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+438356ca1dbe2034656c6ba9092cca41
+  parseNumberOne :: [GHC.Types.Char] -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main16
+                  `cast`
+                (<[GHC.Types.Char]>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+43ee948d412fce9ee10b82ab35da48d9
+  parseNumberThree :: [GHC.Types.Char] -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main5
+                  `cast`
+                (<[GHC.Types.Char]>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+2e993a98335c9549321704148ec6417f
+  parseNumberTwo :: [GHC.Types.Char] -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main6
+                  `cast`
+                (<[GHC.Types.Char]>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+8fea8330172379e04b3d2497dc0d2cfb
+  parseNumberZero :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main11 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

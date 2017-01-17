@@ -59,7 +59,7 @@ calculate (x1:x2:x3:x4:[]) arg =
           f11 (x1:x2:x3:x4:[]) arg = (sign x3) (takeMaybePM $ d x1 (read x2) arg) (takeMaybePM $ d x4 0 arg)
           f12 (x1:x2:x3:x4:[]) arg = (takeMaybePM $ d x1 (read x2) arg) * (takeMaybeTD $ e x4 0 arg) + (takeMaybeTD $ e x1 (read x2) arg) * (takeMaybePM $ d x4 0 arg)
           f13 (x1:x2:x3:x4:[]) arg = ((takeMaybePM $ d x1 (read x2) arg) * (takeMaybeTD $ e x4 0 arg) - (takeMaybeTD $ e x1 (read x2) arg) * (takeMaybePM $ d x4 0 arg))/(takeMaybePM $ e x4 0 arg)^2
-          f21 (x1:x2:x3:x4:[]) arg = (sign x2) (takeMaybePM $ d x1 0 arg) (takeMaybePM $ d x4 (read x3) arg)
+          f21 (x1:x2:x3:x4:[]) arg = (sign x2) (takeMaybePM $ d x1 0 arg) (takeMaybePM $ d x3 (read x4) arg)
           f22 (x1:x2:x3:x4:[]) arg = (takeMaybePM $ d x1 0 arg) * (takeMaybeTD $ e x3 (read x4) arg) + (takeMaybeTD $ e x1 0 arg) * (takeMaybePM $ d x3 (read x4) arg)
           f23 (x1:x2:x3:x4:[]) arg = ((takeMaybePM $ d x1 0 arg) * (takeMaybeTD $ e x3 (read x4) arg) - (takeMaybeTD $ e x1 0 arg) * (takeMaybePM $ d x3 (read x4) arg))/(takeMaybePM $ e x3 (read x4) arg)^2
 
