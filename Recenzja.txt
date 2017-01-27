@@ -1,0 +1,13 @@
+Recenzja projektu Julii Sypień i Patrycji Tarasińskiej 
+* Bardzo zwięzły plik Main.hs, który wywołuje tylko inną funkcję, co oznacza dobry podział na moduły.
+* Każdy algorytm sortowania jest w innym pliku w katalogu src, co zapewnia przejrzystość i doskonale dekomponuje kod.
+* Poszczególne pliki są krótkie , co zachęca do zapoznania się z nimi.
+* Kod jest bardzo starannie wykonany, co umożliwia szybkie zrozumienie zawartości poszczególnych modułów.
+* W niektórych funkcjach cięcia są odrobinę zbyt duże, co przy większym kodzie groziłoby wielką rozciągłością kodu i
+  utrudniłoby jego analizę.
+* Jeśli chodzi o testy, to nie można mieć żadnych uwag, rozpatrzone zostało wiele przypadków, co pozwala im spełnić rolę testującą
+  i minimalizuje ryzyko niewykrycia błędów, gdyby takowe w kodzie się znajdowały.
+* Rozpatrując same algorymy sortowania to zostały one zrobione w duchu paradygmatu funkcyjnego, bardzo dobrze wykorzystując
+  rekurencję. 
+* Podsumowując , całościowo kod wywarł na mnie bardzo dobre wrażenie , z uwagi na bardzo dużą przejrzystość i sprawną organizację. 
+  Osobiście, uważam , że temat projektu był bardzo ciekawy i żałuję , iż sam na taki nie wpadłem :)
